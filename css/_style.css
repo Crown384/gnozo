@@ -2,38 +2,32 @@
 
 @font-face {
     font-family: 'CeraPro';
-    src: url('/fonts/thin300.woff') format('woff');
+    src: url('/fonts/CeraRoundProDEMOThin.otf') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: 'CeraPro';
-    src: url('/fonts/light400.woff') format('woff');
+    src: url('/fonts/CeraRoundProDEMOLight.otf') format('woff');
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: 'CeraPro';
-    src: url('/fonts/regular500.woff') format('woff');
+    src: url('/fonts/CeraRoundProDEMORegular.otf') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: 'CeraPro';
-    src: url('/fonts/medium600.woff') format('woff');
+    src: url('/fonts/CeraRoundProDEMOBold.otf') format('woff');
     font-weight: 600;
     font-style: normal;
 }
 @font-face {
     font-family: 'CeraPro';
-    src: url('/fonts/bold700.woff') format('woff');
+    src: url('/fonts/CeraRoundProDEMOBlack.otf') format('woff');
     font-weight: 700;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'CeraPro';
-    src: url('/fonts/black800.woff') format('woff');
-    font-weight: 800;
     font-style: normal;
 }
 
