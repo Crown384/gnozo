@@ -6,24 +6,28 @@
     font-weight: 300;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'CeraPro';
     src: url('/fonts/CeraRoundProDEMOLight.otf') format('woff');
     font-weight: 400;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'CeraPro';
     src: url('/fonts/CeraRoundProDEMORegular.otf') format('woff');
     font-weight: 500;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'CeraPro';
     src: url('/fonts/CeraRoundProDEMOBold.otf') format('woff');
     font-weight: 600;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'CeraPro';
     src: url('/fonts/CeraRoundProDEMOBlack.otf') format('woff');
@@ -33,4 +37,15 @@
 
 body {
     font-family: 'CeraPro', Helvetica, sans-serif;
+}
+
+.button {
+    background-color: rgba(93, 111, 3, 0);
+    color: whitesmoke;
+
+    padding: 10px 20px;
+    border: 2px solid whitesmoke;
+    border-bottom: 6px solid whitesmoke;
+    border-radius: 0.8em;
+    text-align: center;
 }
