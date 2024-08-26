@@ -1,0 +1,10 @@
+
+@media all and (min-width: 768px) {
+    .cover {
+        height: 40px;
+        aspect-ratio: 3/4;
+
+        object-fit: cover;
+        object-position: center;
+    }
+}
