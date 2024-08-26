@@ -25,4 +25,13 @@
         object-fit: cover;
         object-position: center;
     }
+
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .bi {
+        font-size: 24px;
+    }
 }
