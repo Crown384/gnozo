@@ -3,35 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHM101 by Professor Jesus</title>
+    <!-- BOOTSTRAP CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- BOOTSTRAP JAVASCRIPT -->
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <title>page</title>
     <link rel="stylesheet" href="/css/_style.css">
+    <style>
+        .cover {
+            width: 80%;
+            aspect-ratio: 3/4;
 
+            object-fit: cover;
+            object-position: center;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container my-3">
-        <div class="row gap-1 m-2">
+    <div class="container">
+        <!-- IMG & TITLE -->
+        <div class="row align-items-center justify-content-around">
             <div class="col-6">
-                <div class="box" style="width: 80%; aspect-ratio: 3/5; background-color: crimson;"></div>
+                <img src="/assets/space1.avif" alt="test-img" class="img-fluid cover">
             </div>
+
             <div class="col-6">
-                <h2 class="h2">CHM101 Basics</h2>
-                <h4 class="lead">CHM101 Basics</h4>
+                <h2 class="h2">CHM101 by Professor Jesus</h2>
+                <p class="lead">Professor Jesus</p>
             </div>
-        </div>
-
-        <div class="col btn btn-primary col-9">
-            <span class="bi bi-download"></span>
-            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-magnifying-glass"><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" class=""></path></svg>
-
-            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="arrow-down-to-line" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="margin-right-sm svg-inline--fa fa-arrow-down-to-line fa-lg"><path fill="currentColor" d="M360 480c13.3 0 24-10.7 24-24s-10.7-24-24-24L24 432c-13.3 0-24 10.7-24 24s10.7 24 24 24l336 0zM174.5 344.4c4.5 4.8 10.9 7.6 17.5 7.6s12.9-2.7 17.5-7.6l128-136c9.1-9.7 8.6-24.8-1-33.9s-24.8-8.6-33.9 1L216 267.5l0-83.5 0-128c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 128 0 83.5L81.5 175.6c-9.1-9.7-24.3-10.1-33.9-1s-10.1 24.3-1 33.9l128 136z" class=""></path></svg>
-            <span>Download</span>
         </div>
     </div>
 </body>
