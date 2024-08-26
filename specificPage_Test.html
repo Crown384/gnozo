@@ -12,27 +12,6 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/_style.css">
-    <style>
-        @media (min-width: 576px) {
-            .cover {
-                display: none;
-                height: 40px;
-                aspect-ratio: 3/4;
-
-                object-fit: cover;
-                object-position: center;
-            }
-
-            .svg {
-                width: 10px;
-                height: 10px;
-            }
-
-            .bi {
-                font-size: 24px;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -40,7 +19,7 @@
         <!-- IMG & TITLE -->
         <div class="row align-items-center justify-content-center g-2">
             <div class="col">
-                <img src="/assets/space1.avif" alt="test-img" class="img-fluid cove text-end rounded-1">
+                <img src="/assets/space1.avif" alt="test-img" class="img-fluid cover text-end rounded-1">
             </div>
 
             <div class="col text-start">
@@ -51,8 +30,8 @@
 
         <!-- BUTTONS -->
         <div class="row">
-            <div class="col d-flex flex-column g-2 align-items-center">
-                <button class="btn btn-outline-light border-1 border-bottom-3 col-9">
+            <div class="col d-flex flex-column align-items-center">
+                <button class="btn btn-outline-dark border-1 border-bottom-3 col-9">
                     <span style="font-weight: 600;" class="bi bi-eye"></span>
                     <span style="font-weight: 600;">Preview</span>
                 </button>
