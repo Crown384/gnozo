@@ -19,6 +19,7 @@
 
 @media all and (min-width: 576px) {
     .cover {
+        display: none;
         height: 40px;
         aspect-ratio: 3/4;
 
