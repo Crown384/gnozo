@@ -1,5 +1,14 @@
 {
   "dependencies": {
     "bootstrap": "^5.3.3"
-  }
+  },
+  "name": "gnozo",
+  "version": "1.0.0",
+  "description": "COT Ikole",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stephen Tioluwani Alademomi",
+  "license": "ISC"
 }
