@@ -2,62 +2,124 @@
 /* @import url(/css/bookPage.css); */
 
 @font-face {
-    font-family: 'CeraPro';
-    src: url('/fonts/CeraRoundProDEMOThin.otf') format('woff');
-    font-weight: 300;
-    font-style: normal;
+  font-family: "CeraPro";
+  src: url("/fonts/CeraRoundProDEMOThin.otf") format("woff");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'CeraPro';
-    src: url('/fonts/CeraRoundProDEMOLight.otf') format('woff');
-    font-weight: 400;
-    font-style: normal;
+  font-family: "CeraPro";
+  src: url("/fonts/CeraRoundProDEMOLight.otf") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'CeraPro';
-    src: url('/fonts/CeraRoundProDEMORegular.otf') format('woff');
-    font-weight: 500;
-    font-style: normal;
+  font-family: "CeraPro";
+  src: url("/fonts/CeraRoundProDEMORegular.otf") format("woff");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'CeraPro';
-    src: url('/fonts/CeraRoundProDEMOBold.otf') format('woff');
-    font-weight: 600;
-    font-style: normal;
+  font-family: "CeraPro";
+  src: url("/fonts/CeraRoundProDEMOBold.otf") format("woff");
+  font-weight: 600;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'CeraPro';
-    src: url('/fonts/CeraRoundProDEMOBlack.otf') format('woff');
-    font-weight: 700;
-    font-style: normal;
+  font-family: "CeraPro";
+  src: url("/fonts/CeraRoundProDEMOBlack.otf") format("woff");
+  font-weight: 700;
+  font-style: normal;
 }
 
 :root {
-    --bg-color: white;
-    --text-color: #183153;
-    --btn-bg-color: purple;
+  --bg-color: #131313;
+  --text-color: #183153;
+  --btn-bg-color: purple;
 }
 
 body {
-    font-family: 'CeraPro', Helvetica, sans-serif;
+  font-family: "CeraPro", Helvetica, sans-serif;
 
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  color: whitesmoke;
 }
 
 h2 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 h3 {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 span {
-    font-weight: 400;
+  font-weight: 400;
+}
+
+/* JESUS */
+
+
+section {
+  width: 100%;
+}
+
+section .header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+a {
+  /* color: whitesmoke !important; */
+  text-decoration: none;
+}
+
+.resources {
+    background-color: red;
+    /* width: 120%; */
+    height: 100px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+.test {
+    display: grid;
+    grid-auto-flow: row;
+    overflow-x: scroll;
+    overscroll-behavior-inline: contain;
+}
+
+.test > * {
+    display: grid;
+    gap: 0.5em;
+    grid-auto-flow: column;
+    grid-template-columns: 20ch;
+    white-space: nowrap;
+    /* overflow-x: scroll; */
+    /* flex-wrap: nowrap; */
+}
+
+/* BOOTSTRAP BREAKPOINTS */
+/* xs < 576px */
+/* sm > 576px */
+/* md > 768px */
+/* lg > 992px */
+/* xl > 1200px */
+/* xxl > 1400px */
+
+@media screen and (min-width: 576px) {
+  svg {
+    height: 36px;
+    width: 36px;
+  }
 }

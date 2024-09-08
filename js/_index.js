@@ -1,12 +1,75 @@
 const engineeringBooks = [
     {
-        title: "MEE 204 - SENATOR DEX CAMPAIGN",
+        title: 'hi dskjhFCNLGLJHFBCWKJHBGFKCC JHKBFH',
         courseCode: "MEE204",
-        lecturer: "Engr James Abioye",
+        author: "Engr James Abioye",
         ratingStar: "⭐⭐⭐⭐⭐",
         ratingNum: "4.5",
         downLink: "https://cotacad.org/mee204.pdf",
 
         keywords: ['mee204','james','engr','abioye','204','mee','senator','dex']
-    }
-]
+    },
+    {
+        title: 'CHM101 STARLINK abdvjcbhfehcwbjchfqgfhgjh',
+        author: 'Dr Honor',
+        keywords: ['chm101', '101', 'chemistry'],
+        downLink: '/assets/images/space1.avif',
+        fileType: 'pdf',
+    },
+    {
+        title: 'CHM101 STARLINK 3.0',
+        author: 'Prof Adebayo',
+        keywords: ['chm101', '101', 'chemistry'],
+        downLink: '/assets/images/space2.avif',
+        fileType: 'epub',
+    },
+    {
+        title: 'CHM101 STARLINK JESUS adhgxcbwfegcgflchifgbh',
+        author: 'Prof Adebayo',
+        keywords: ['chm101', '101', 'chemistry'],
+        downLink: '/assets/images/space3.avif',
+        fileType: 'pdf',
+    },
+    {
+        title: 'CHM101 STARLINK 3.0',
+        author: 'Prof Adebayo',
+        keywords: ['chm101', '101', 'chemistry'],
+        downLink: '/assets/images/space2.avif',
+        fileType: 'epub',
+    },
+    {
+        title: 'CHM101 STARLINK JESUS kjhfchjkcafhjkascfhbaschbvfhbfsgvhbsafgvbhkvafbhkafgvbhdfgbadfvbvbh',
+        author: 'Prof Adebayo',
+        keywords: ['chm101', '101', 'chemistry'],
+        downLink: '/assets/images/space3.avif',
+        fileType: 'pdf',
+    },
+    {
+        title: 'CHM101 STARLINK 3.0',
+        author: 'Prof Adebayo',
+        keywords: ['chm101', '101', 'chemistry'],
+        downLink: '/assets/images/space2.avif',
+        fileType: 'epub',
+    },
+    {
+        title: 'CHM101 STARLINK JESUS',
+        author: 'Prof Adebayo',
+        keywords: ['chm101', '101', 'chemistry'],
+        downLink: '/assets/images/space3.avif',
+        fileType: 'pdf',
+    },
+    {
+        title: 'CHM101 STARLINK 3.0',
+        author: 'Prof Adebayo',
+        keywords: ['chm101', '101', 'chemistry'],
+        downLink: '/assets/images/space2.avif',
+        fileType: 'epub',
+    },
+    {
+        title: 'CHM101 STARLINK JESUS',
+        author: 'Prof Adebayo',
+        keywords: ['chm101', '101', 'chemistry'],
+        downLink: '/assets/images/space3.avif',
+        fileType: 'pdf',
+    },
+];
