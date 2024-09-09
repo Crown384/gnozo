@@ -1,7 +1,6 @@
 // IN THE NAME OF THE FATHER, SON & HOLY SPIRIT, BLESSED FOREVER AMEN
 
 const main = document.querySelector("main");
-const Sections = document.querySelectorAll("section");
 const hi = document.querySelector("section");
 console.log(Sections);
 console.log(hi.id);
@@ -29,10 +28,14 @@ sectionTitles.forEach((section) => {
       </section>
     `;
 });
+const Sections = document.querySelectorAll("section");
+
+
 
 document.addEventListener("DOMContentLoaded", Levites);
 
 function Levites() {
+    
   Sections.forEach((section) => {
     console.log(section.id);
     const bookArray = engineeringBooks.filter((book) => {
