@@ -25,8 +25,8 @@
   </head>
 
   <body>
-    <main>
-      <section class="home">
+    <main class="home">
+      <section id="first">
         <div class="header">
           <h3>CHM 101</h3>
           <p class="muted">></p>
@@ -44,7 +44,7 @@
 
     <!-- CONSTANTS -->
     <script>
-      const main = document.querySelector("main");
+      // const main = document.querySelector("main");
       const home = document.querySelector(".home");
       const section = document.querySelector(".test");
       const Rbutton = document.querySelector(".Rbutton");
@@ -85,9 +85,9 @@
 
     <script defer>
       document.addEventListener("DOMContentLoaded", resourceFunc);
-      function resourceFunc() {
-        engineeringBooks.forEach((resource) => {
-          let index = engineeringBooks.indexOf(resource);
+      function resourceFunc(arrayName) {
+        arrayName.forEach((resource) => {
+          let index = arrayName.indexOf(resource);
 
           if (index % 3 == 0) {
             one.innerHTML += `<p class="btn btn-outline-light Rbutton">${resource.title}</p>`;
@@ -105,5 +105,7 @@
       const output = document.querySelector(".output");
       document.addEventListener("DOMContentLoaded", LoadContentToButtons);
     </script>
+
+    <script src="/js/DynamicResourceLoading.js"></script>
   </body>
 </html>
