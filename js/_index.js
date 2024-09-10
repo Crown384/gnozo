@@ -1,6 +1,6 @@
 const engineeringBooks = [
     {
-        title: 'hi dskjhFCNLGLJHFBCWKJHBGFKCC JHKBFH',
+        title: 'hi',
         courseCode: "MEE204",
         author: "Engr James Abioye",
         ratingStar: "⭐⭐⭐⭐⭐",
@@ -10,7 +10,7 @@ const engineeringBooks = [
         keywords: ['mee204','james','engr','abioye','204','mee','senator','dex']
     },
     {
-        title: 'CHM101 STARLINK abdvjcbhfehcwbjchfqgfhgjh',
+        title: 'CHM101 STARLINK',
         author: 'Dr Honor',
         keywords: ['chm101', '101', 'chemistry'],
         downLink: '/assets/images/space1.avif',
