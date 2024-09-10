@@ -46,9 +46,6 @@ function createSections() {
           <p class="muted">></p>
         </div>
         <section class="test" id="${section.title}">
-          <div class="one"></div>
-          <div class="two"></div>
-          <div class="three"></div>
         </section>
       `;
 
