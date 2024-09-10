@@ -109,6 +109,16 @@ a {
     /* flex-wrap: nowrap; */
 }
 
+.one .btn,
+.two .btn,
+.three .btn {
+    display: inline-block; /* Ensures buttons are as wide as their content */
+    padding: 5px 10px; /* Adjust padding to your preference */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    width: auto; /* Ensure width is only based on content */
+    max-width: 100%; /* Prevent it from growing too large */
+}
+
 /* BOOTSTRAP BREAKPOINTS */
 /* xs < 576px */
 /* sm > 576px */
