@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BOOTSTRAP CSS -->
+    <link href="/css/main.min.css" rel="stylesheet" />
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/_index.js"></script>
+    <!-- FAV ICON HERE --- REMEBER -->
+    <title>Gnozo: COT IKOLE</title>
+    <link rel="stylesheet" href="css/_style.css" />
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <main class="home">
+        <section id="first">
+            <div class="header">
+                <h3>CHM 101</h3>
+                <p class="muted">></p>
+            </div>
+            <section class="test">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </section>
+        </section>
+        <section class="output hidden"></section>
+    </main>
+
+    <!-- CONSTANTS -->
+    <script>
+        const home = document.querySelector(".home");
+        const section = document.querySelector(".test");
+        const one = section.querySelector(".one");
+        const two = section.querySelector(".two");
+        const three = section.querySelector(".three");
+        const output = document.querySelector(".output");
+    </script>
+
+    <!-- Load Content into Sections -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Sample data for demonstration
+            const engineeringBooks = [
+                { title: "Book 1", keywords: ["chm101"] },
+                { title: "Book 2", keywords: ["phy101"] },
+                { title: "Book 3", keywords: ["cve304"] },
+                { title: "Book 4", keywords: ["chm101"] },
+            ];
+
+            const keywordsIDS = [
+                { id: "chm101", keywords: ["chm101", "chemistry"] },
+                { id: "phy101", keywords: ["phy101", "physics"] },
+                { id: "cve304", keywords: ["cve304", "civil"] }
+            ];
+
+            function resourceFunc(arrayName) {
+                arrayName.forEach((resource, index) => {
+                    let container;
+                    if (index % 3 === 0) {
+                        container = one;
+                    } else if (index % 2 === 0 && (index - 3) % 2 !== 0) {
+                        container = two;
+                    } else {
+                        container = three;
+                    }
+
+                    const button = document.createElement('p');
+                    button.className = 'btn btn-outline-light Rbutton';
+                    button.innerHTML = `
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                            <path d="M247.85-260.62q51-36.69 108.23-58.03Q413.31-340 480-340t123.92 21.35q57.23 21.34 108.23 58.03 39.62-41 63.73-96.84Q800-413.31 800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 66.69 24.12 122.54 24.11 55.84 63.73 96.84ZM480-460q-50.54 0-85.27-34.73T360-580q0-50.54 34.73-85.27T480-700q50.54 0 85.27 34.73T600-580q0 50.54-34.73 85.27T480-460Zm0 340q-75.31 0-141-28.04t-114.31-76.65Q176.08-273.31 148.04-339 120-404.69 120-480t28.04-141q28.04-65.69 76.65-114.31 48.62-48.61 114.31-76.65Q404.69-840 480-840t141 28.04q65.69 28.04 114.31 76.65 48.61 48.62 76.65 114.31Q840-555.31 840-480t-28.04 141q-28.04 65.69-76.65 114.31-48.62 48.61-114.31 76.65Q555.31-120 480-120Z"/>
+                        </svg> ${resource.title}`;
+                    container.appendChild(button);
+
+                    // Add event listener to each button
+                    button.addEventListener('click', () => {
+                        output.innerHTML = `<h3>${resource.title}</h3>`;
+                        home.classList.add("hidden");
+                        output.classList.remove("hidden");
+                        history.pushState(null, null, window.location.href);
+                    });
+                });
+
+                // Handle the back button
+                window.addEventListener("popstate", () => {
+                    home.classList.remove("hidden");
+                    output.classList.add("hidden");
+                });
+            }
+
+            // Call resourceFunc with books that match the keywords for the section
+            const matchingBooks = engineeringBooks.filter((book) => {
+                return keywordsIDS.some(keywordObj => 
+                    keywordObj.keywords.includes(book.keywords[0])
+                );
+            });
+
+            resourceFunc(matchingBooks);
+        });
+    </script>
+</body>
+</html>

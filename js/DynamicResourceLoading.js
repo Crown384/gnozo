@@ -1,75 +1,53 @@
 // IN THE NAME OF THE FATHER, SON & HOLY SPIRIT, BLESSED FOREVER AMEN
 
-const main = document.querySelector("main");
-const hi = document.querySelector("section");
-console.log(Sections);
-console.log(hi.id);
-// const bookArray = [];
-
-const sectionTitles = ["chm101", "phy101", "cve304"];
-
-const keywordsIDS = [
-  { id: "chm101", keywords: ["chm101", "chm101", "chemistry"] },
-];
-
-sectionTitles.forEach((section) => {
-  console.log(section);
-  main.innerHTML += `
-    <section id="${section}">
-        <div class="header">
-          <h3>${section}</h3>
-          <p class="muted">></p>
-        </div>
-        <section class="test">
-          <div class="one"></div>
-          <div class="two"></div>
-          <div class="three"></div>
-        </section>
-      </section>
-    `;
-});
-const Sections = document.querySelectorAll("section");
-
-
-
 document.addEventListener("DOMContentLoaded", Levites);
 
 function Levites() {
-    
-  Sections.forEach((section) => {
-    console.log(section.id);
-    const bookArray = engineeringBooks.filter((book) => {
-      keywordsIDS.forEach((matchingBook) => {
-        book.keywords.forEach((bookKeyword) => {
-          matchingBook.keywords.forEach((matchingBookKeyword) => {
-            if (
-              bookKeyword === matchingBookKeyword &&
-              section.id === matchingBook.id
-            ) {
-              return book;
-            }
-          });
-        });
-      });
-    });
-    console.log(bookArray);
-  });
+    const main = document.querySelector("main");
 
-  Sections.forEach((section) => {
-    engineeringBooks.forEach((book) => {
-      keywordsIDS.forEach((matchingBook) => {
-        book.keywords.forEach((bookKeyword) => {
-          matchingBook.keywords.forEach((matchingBookKeyword) => {
-            if (
-              bookKeyword === matchingBookKeyword &&
-              section.id === matchingBook.id
-            ) {
-              // bookArray.push(book);
-              resourceFunc(bookArray);
-            }
-          });
-        });
-      });
+    const sectionTitles = ["chm101", "phy101", "cve304"];
+    const keywordsIDS = [
+        { id: "chm101", keywords: ["chm101", "chemistry"] },
+        { id: "phy101", keywords: ["physics", "phy101"] },
+        { id: "cve304", keywords: ["civil", "cve304"] }
+    ];
+
+    // Dynamically create and insert sections
+    sectionTitles.forEach((section) => {
+        main.innerHTML += `
+            <section id="${section}">
+                <div class="header">
+                    <h3>${section}</h3>
+                    <p class="muted">></p>
+                </div>
+                <section class="test">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </section>
+            </section>
+        `;
     });
-  });
+
+    // Re-select Sections to include newly created sections
+    const Sections = document.querySelectorAll("section");
+
+    // Filter and populate books for each section
+    Sections.forEach((section) => {
+        const matchingBooks = engineeringBooks.filter((book) => {
+            const sectionId = section.id;
+            const matchingKeywords = keywordsIDS.find(k => k.id === sectionId)?.keywords || [];
+            return book.keywords.some(keyword => matchingKeywords.includes(keyword));
+        });
+
+        // Assuming resourceFunc is a function to process matching books
+        if (matchingBooks.length) {
+            resourceFunc(matchingBooks);
+        }
+    });
+}
+
+function resourceFunc(books) {
+    // Logic to handle books
+    console.log(books);
 }
