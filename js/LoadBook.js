@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     function renderFilteredItems(containerIds, filteredItems) {
         containerIds.forEach((containerId) => {
-            const container = document.getElementById(containerId);
-            if (container) {
+            const contain = document.getElementById(containerId);
+            if (contain) {
                 // Ensure the container element exists
-                container.innerHTML = "";
+                contain.innerHTML = "";
 
                 // Create elements to hold the resources
                 const one = document.createElement('div');
@@ -29,9 +29,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
 
                 // Append the divs to the container
-                container.appendChild(one);
-                container.appendChild(two);
-                container.appendChild(three);
+                contain.appendChild(one);
+                contain.appendChild(two);
+                contain.appendChild(three);
             } else {
                 console.warn(`Container with ID "${containerId}" not found.`); // Log a warning if the container is missing
             }
