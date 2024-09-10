@@ -109,7 +109,7 @@ a {
     /* flex-wrap: nowrap; */
 }
 
-.one {
+.one, .two, .three {
 display: flex;
 flex-gap: 0.2rem;
 }
