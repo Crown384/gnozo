@@ -109,6 +109,10 @@ a {
     /* flex-wrap: nowrap; */
 }
 
+.one {
+border: 2px solid white;
+}
+
 .one .btn,
 .two .btn,
 .three .btn {
