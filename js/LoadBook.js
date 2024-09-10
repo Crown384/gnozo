@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function renderFilteredItems(containerIds, filteredItems) {
         containerIds.forEach((containerId) => {
             const contain = document.getElementById(containerId);
+            contain.className = 'container';
             if (contain) {
                 // Ensure the container element exists
                 contain.innerHTML = "";
