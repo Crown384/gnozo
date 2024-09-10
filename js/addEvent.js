@@ -1,29 +1,33 @@
+// Query the container that holds the buttons
 const output = document.querySelector(".output");
-document.addEventListener("DOMContentLoaded", LoadContentToButtons);
+const home = document.querySelector(".home");
+const testContainer = document.querySelector(".test");
 
-const LoadContentToButtons = () => {
-  generateEventListener(one);
-  generateEventListener(two);
-  generateEventListener(three);
-};
-
-function generateEventListener(contain) {
-  contain.addEventListener("click", (e) => {
+// Set up event delegation
+document.addEventListener("DOMContentLoaded", () => {
+  testContainer.addEventListener("click", (e) => {
     if (e.target.classList.contains("Rbutton")) {
       const specificResource = engineeringBooks.find((resource) => {
-        return resource.title === e.target.textContent;
+        return resource.title === e.target.textContent.trim();
       });
 
-      // No need to add another click event listener, just handle the logic here
-      history.pushState(null, null, window.location.href);
-      output.innerHTML = `${specificResource.title}`;
-      home.classList.add("hidden");
-      output.classList.remove("hidden");
+      if (specificResource) {
+        // Update the history state
+        history.pushState(null, null, window.location.href);
+        
+        // Display the selected resource's title
+        output.innerHTML = `${specificResource.title}`;
+        
+        // Hide the home container and show the output container
+        home.classList.add("hidden");
+        output.classList.remove("hidden");
 
-      window.addEventListener("popstate", () => {
-        home.classList.remove("hidden");
-        output.classList.add("hidden");
-      });
+        // Handle back navigation
+        window.addEventListener("popstate", () => {
+          home.classList.remove("hidden");
+          output.classList.add("hidden");
+        });
+      }
     }
   });
-}
+});
