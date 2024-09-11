@@ -54,7 +54,7 @@ function createSections() {
     container.appendChild(sectionElement);
   });
 
-  const mainTag = document.querySelector(".home");
+  const mainTag = document.querySelector("main");
   mainTag.appendChild(container);
   // document.main.appendChild(container);
 }

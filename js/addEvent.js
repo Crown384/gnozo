@@ -2,14 +2,18 @@
 const output = document.querySelector(".output");
 const home = document.querySelector(".home");
 const testContainer = document.querySelector(".test");
+const one = document.querySelector(".one");
+const two = document.querySelector(".two");
+const three = document.querySelector(".three");
 
 // Set up event delegation
 document.addEventListener("DOMContentLoaded", () => {
-  testContainer.addEventListener("click", (e) => {
+  one.addEventListener("click", (e) => {
     if (e.target.classList.contains("Rbutton")) {
       const specificResource = engineeringBooks.find((resource) => {
         return resource.title === e.target.textContent.trim();
       });
+      console.log(specificResource)
 
       if (specificResource) {
         // Update the history state

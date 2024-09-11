@@ -78,6 +78,7 @@ section .header {
 a {
   /* color: whitesmoke !important; */
   text-decoration: none;
+  color: inherit;
 }
 
 .resources {
@@ -100,6 +101,10 @@ a {
     gap: 0.3rem;
 }
 
+.test::-webkit-scrollbar {
+  width: 0.01em;
+}
+
 .test > * {
     display: grid;
     gap: 0.5em;
@@ -115,6 +120,16 @@ display: flex;
 gap: 0.2rem;
 }
 
+footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  justify-content: space-around;
+  cursor: pointer;
+}
+
 /* BOOTSTRAP BREAKPOINTS */
 /* xs < 576px */
 /* sm > 576px */
@@ -125,7 +140,10 @@ gap: 0.2rem;
 
 @media screen and (min-width: 576px) {
   svg {
-    height: 36px;
-    width: 36px;
+    height: 48px;
+    width: 48px;
+    stroke-width: 10px;
+    fill: whitesmoke;
+    stroke: whitesmoke;
   }
 }

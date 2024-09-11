@@ -14,48 +14,34 @@
       crossorigin="anonymous"
     ></script>
     <script src="/js/_index.js"></script>
-    <script src="/js/bookSection.js" defer></script>
-    <script src="/js/LoadBook.js" defer></script>
+    <!-- <script src="/js/bookSection.js" defer></script>
+    <script src="/js/LoadBook.js" defer></script> -->
 
-    <script src="/js/nav.js" defer></script>
+    <!-- <script src="/js/nav.js" defer></script> -->
     <!-- FAV ICON HERE --- REMEBER -->
-    <title>Gnozo: COT IKOLE</title>
+    <title>Search: GNOZO</title>
     <link rel="stylesheet" href="css/_style.css" />
     <style>
       .hidden {
         display: none;
-      }
-
-      .searchResults {
-        display: grid;
-        gap: 1rem;
-      }
-
-      .searchResults > * {
-        background-color: #13131376;
       }
     </style>
   </head>
 
   <body>
     <main id="home"></main>
-    <section class="output hidden"></section>
     <section id="search" class="container hidden">
       <form>
         <!-- REMEBER TO E.PREVENT DEFAULT FOR FORM IN JS -->
         <input
           type="text"
           id="searchInput"
-          oninput="searchResource()"
+          oninput="search()"
           placeholder="HI Jesus Loves you"
         />
       </form>
-      <p>HI Jesus LOVES YOU</p>
-
-      <div id="searchResults" class="container searchResults"></div>
+      <div id="searchResults" class="searchResults"></div>
     </section>
-    <section id="about" class="container">About</section>
-
     <footer>
       <span class="bnav home">Home</span>
       <span class="bnav search">Search</span>
@@ -63,6 +49,5 @@
     </footer>
 
     <!-- <script defer src="/js/addEvent.js"></script> -->
-    <script src="/js/search.js"></script>
   </body>
 </html>
