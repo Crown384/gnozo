@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         history.pushState(null, null, window.location.href);
         
         // Display the selected resource's title
-        output.innerHTML = `${specificResource.title}`;
+        output.innerHTML = `<p>${specificResource.title}</p>`;
         
         // Hide the home container and show the output container
         home.classList.add("hidden");
