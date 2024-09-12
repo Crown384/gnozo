@@ -1,13 +1,12 @@
 const engineeringBooks = [
     {
-        title: 'hi',
-        courseCode: "MEE204",
-        author: "Engr James Abioye",
-        ratingStar: "⭐⭐⭐⭐⭐",
-        ratingNum: "4.5",
-        downLink: "https://cotacad.org/mee204.pdf",
-
-        keywords: ['mee204','james','engr','abioye','204','mee','senator','dex']
+        title: CHM 101 1st and 2nd order reaction',
+        courseCode: "CHM 101",
+        author: "",
+        ratings: "4.5",
+        downLink: "https://drive.google.com/uc?export=download&id=1Qbr7j2cUDR_03XAthhvTa8F4be1YAgnj",
+        keywords: ['chm','101','chm 101', 'chm101','order','reaction'],
+semester: "1st semester",
     },
     {
         title: 'CHM101 STARLINK',
