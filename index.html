@@ -34,35 +34,74 @@
       .searchResults > * {
         background-color: #13131376;
       }
+
+      #arrowBack {
+        cursor: pointer;
+      }
     </style>
   </head>
 
   <body>
     <main id="home"></main>
+
     <section class="output hidden"></section>
+
     <section id="search" class="container hidden">
-      <form>
-        <!-- REMEBER TO E.PREVENT DEFAULT FOR FORM IN JS -->
-        <input
-          type="text"
-          id="searchInput"
-          oninput="searchResource()"
-          placeholder="HI Jesus Loves you"
-        />
-      </form>
-      <p>HI Jesus LOVES YOU</p>
+      <div class="row">
+        <div class="col-12">
+          <form>
+            <!-- REMEBER TO E.PREVENT DEFAULT FOR FORM IN JS -->
+            <input
+              class="mx-auto mt-4"
+              type="text"
+              id="searchInput"
+              oninput="searchResource()"
+              placeholder="HI Jesus Loves you"
+            />
+          </form>
+        </div>
+      </div>
 
-      <div id="searchResults" class="container searchResults"></div>
+      <div class="row">
+        <div class="col-12">
+          <div id="searchResults" class="searchResults"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 searchGroups mt-3">
+          <div id="" class="groups">Chemistry</div>
+          <div id="" class="groups">PHYsics</div>
+          <div id="" class="groups">MTH</div>
+        </div>
+      </div>
     </section>
-    <section id="about" class="container hidden">About</section>
 
+    <section id="about" class="container hidden">About</section>
+    <section
+      id="groupsOutput"
+      class="container mx-auto mt-4 groupsOutput hidden"
+    >
+      <div class="first"></div>
+      <div class="second"></div>
+    </section>
+    <!-- <section class="navArrows hidden">
+      <div class="third"></div>
+      <div class="fourth"></div>
+    </section> -->
     <footer>
       <span class="bnav home">Home</span>
-      <span class="bnav search">Search</span>
-      <span class="bnav about">About</span>
+      <span id="search" class="bnav search">Search</span>
+      <span id="about" class="bnav about">About</span>
     </footer>
 
     <!-- <script defer src="/js/addEvent.js"></script> -->
     <script src="/js/search.js"></script>
+    <script src="/js/groups.js"></script>
+    <script defer src="/js/navArrows.js"></script>
+
+    <script>
+      
+    </script>
   </body>
 </html>

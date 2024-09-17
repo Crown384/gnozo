@@ -1,5 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-/* @import url(/css/bookPage.css); */
+@import url("/css/search.css");
 
 @font-face {
   font-family: "CeraPro";
@@ -62,8 +62,30 @@ span {
   font-weight: 400;
 }
 
-/* JESUS */
+.truncate-1,
+.truncate-2,
+.truncate-3 {
+  width: 100%;
+  display: -webkit-box;
+  /* -webkit-line-clamp: 1; */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+}
 
+.truncate-1 {
+  -webkit-line-clamp: 1;
+}
+
+.truncate-2 {
+  -webkit-line-clamp: 2;
+}
+
+.truncate-3 {
+  -webkit-line-clamp: 3;
+}
+
+/* JESUS */
 
 section {
   width: 100%;
@@ -82,23 +104,23 @@ a {
 }
 
 .resources {
-    background-color: red;
-    /* width: 120%; */
-    height: 100px;
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: auto;
+  background-color: red;
+  /* width: 120%; */
+  height: 100px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
 
-    overflow-x: auto;
-    overscroll-behavior-inline: contain;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
 }
 
 .test {
-    display: grid;
-    grid-auto-flow: row;
-    overflow-x: scroll;
-    overscroll-behavior-inline: contain;
-    gap: 0.3rem;
+  display: grid;
+  grid-auto-flow: row;
+  overflow-x: scroll;
+  overscroll-behavior-inline: contain;
+  gap: 0.3rem;
 }
 
 .test::-webkit-scrollbar {
@@ -106,18 +128,20 @@ a {
 }
 
 .test > * {
-    display: grid;
-    gap: 0.5em;
-    grid-auto-flow: column;
-    grid-template-columns: 20ch;
-    white-space: nowrap;
-    /* overflow-x: scroll; */
-    /* flex-wrap: nowrap; */
+  display: grid;
+  gap: 0.5em;
+  grid-auto-flow: column;
+  grid-template-columns: 20ch;
+  white-space: nowrap;
+  /* overflow-x: scroll; */
+  /* flex-wrap: nowrap; */
 }
 
-.one, .two, .three {
-display: flex;
-gap: 0.2rem;
+.one,
+.two,
+.three {
+  display: flex;
+  gap: 0.2rem;
 }
 
 footer {
@@ -137,13 +161,21 @@ footer {
 /* lg > 992px */
 /* xl > 1200px */
 /* xxl > 1400px */
+svg {
+  fill: grey;
 
+  width: 24px;
+  height: 24px;
+}
+
+.authorSVG {
+  fill: whitesmoke;
+}
 @media screen and (min-width: 576px) {
   svg {
     height: 48px;
     width: 48px;
     stroke-width: 10px;
-    fill: whitesmoke;
     stroke: whitesmoke;
   }
 }

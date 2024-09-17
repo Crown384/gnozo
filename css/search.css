@@ -1,0 +1,85 @@
+.groupsOutput, .navArrows {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 45% 45%;
+  justify-content: space-around;
+
+  cursor: pointer;
+}
+
+.first > *,
+.second > *,
+.third > *,
+.fourth > * {
+  display: flex;
+  flex-direction: column;
+  /* margin: 0 auto; */
+  /* align-items: center; */
+  text-align: left;
+  border-radius: 15px;
+  border: 2px solid grey;
+  cursor: pointer;
+  padding: 1em;
+}
+
+.first span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.first .details {
+  color: grey;
+  font-size: 15px;
+}
+
+.first,
+.second,
+.third,
+.fourth {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  cursor: pointer;
+}
+
+.groupsOutput > * {
+  /* border: 2px solid grey; */
+  /* height: auto; */
+}
+
+.searchGroups {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  justify-content: space-around;
+  row-gap: 1em;
+  cursor: pointer;
+}
+
+.searchGroups > * {
+  background-color: rgb(86, 85, 85);
+  padding: 1em;
+
+  display: grid;
+  place-items: center;
+
+  cursor: pointer;
+}
+
+#searchInput {
+  background-color: inherit;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 0.1px solid grey;
+  outline: none;
+  color: whitesmoke;
+  width: 100%;
+}
+
+#searcInput:focus {
+  outline: none;
+}
+
+#searchInput::placeholder {
+  color: grey;
+}

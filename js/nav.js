@@ -4,6 +4,15 @@ const search = document.getElementById("search");
 const about = document.getElementById("about");
 const sectionsNav = document.querySelectorAll("section");
 
+const body = document.querySelector("body");
+body.addEventListener("click", (e) => {
+  if (e.target.classList.contains('about') || e.target.classList.contains('home')) {
+    console.log("body evetF");
+    searchInput.value = "";
+    searchResults.innerHTML = "";
+  }
+});
+
 window.addEventListener("popstate", () => {
   window.history.back();
 });
@@ -36,6 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       // REAL ONE TO BE SHOWN
       main.classList.remove("hidden");
+      searchInput.value = "";
 
       window.addEventListener("popstate", () => {
         window.history.back();

@@ -208,6 +208,11 @@ function searchResource() {
   });
 
   // const resourceTitle = document.querySelector(".resourceTitle");
+
+  window.addEventListener("popstate", () => {
+    searchInput.value = "";
+    searchResults.innerHTML = ""; 
+  });
 }
 
 // Add event listener to search input (use keyup for every keystroke)

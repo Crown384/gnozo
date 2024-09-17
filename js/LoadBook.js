@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
             history.pushState(null, null, window.location.href);
             output.innerHTML = `
                 <div class="container">
+                        <div id="arrowBack" class="row col-12">arrow_back</div>
                         <div class="row col-12">
                             <h4 class="mt-4 resourceTitle">${specificResource.title}</h4>
                         </div>
@@ -122,10 +123,21 @@ document.addEventListener("DOMContentLoaded", function () {
                     </section>
                     </div>
             `;
+            // CONSTs
+            const arrowBack = document.querySelector("#arrowBack");
+
             output.classList.remove("hidden");
             main.classList.add("hidden");
 
             window.addEventListener("popstate", () => {
+              output.classList.add("hidden");
+              main.classList.remove("hidden");
+
+              sectionsNav.forEach((section) => {
+                section.classList.add("hidden");
+              });
+            });
+            arrowBack.addEventListener("click", () => {
               output.classList.add("hidden");
               main.classList.remove("hidden");
 
@@ -150,7 +162,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Use the section filters
   const sectionFilters = [
-    { keywords: ["chm101", "chemistry", "james"], containerIds: ["chm101"] },
+    { keywords: ["chm 101", "chm101","chemistry", "james"], containerIds: ["CHM 101"] },
+    { keywords: ["phy 101", 'phy101', "physics", "phy"], containerIds: ["PHY 101"] },
+    { keywords: ["mth 102", "mathematics", "mth"], containerIds: ["MTH 102"] },
   ];
 
   sectionFilters.forEach((filter) => {

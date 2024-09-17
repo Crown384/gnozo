@@ -1,19 +1,7 @@
 const sections = [
-  {
-    title: "chm101",
-  },
-  {
-    title: "Prayer",
-  },
-  {
-    title: "Holy Spirit",
-  },
-  {
-    title: "2024",
-  },
-  {
-    title: "Fasting",
-  },
+  {title: "CHM 101",},
+  {title: "PHY 101",},
+  {title: "MTH 102",},
 ];
 
 function shuffle(array) {
@@ -37,16 +25,18 @@ function shuffle(array) {
 function createSections() {
   const shuffledSections = shuffle(sections.slice()); // Copy and shuffle sections
   const container = document.createElement("div");
-  container.setAttribute('class', 'container'); // Create container element
+  container.setAttribute("class", "container"); // Create container element
 
   shuffledSections.forEach((section) => {
     const sectionHTML = `
-        <div class="header">
-          <h3>${section.title}</h3>
-          <p class="muted">></p>
-        </div>
-        <section class="test" id="${section.title}">
-        </section>
+            <div class="header">
+      <h3>${section.title}</h3>
+      <div>
+        <p class="navArrow">navArrow</p>
+        <p class="hidden">${section.title}</p>
+      </div>
+    </div>
+    <section class="test" id="${section.title}"></section>
       `;
 
     const sectionElement = document.createElement("section");

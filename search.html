@@ -14,40 +14,147 @@
       crossorigin="anonymous"
     ></script>
     <script src="/js/_index.js"></script>
-    <!-- <script src="/js/bookSection.js" defer></script>
-    <script src="/js/LoadBook.js" defer></script> -->
-
-    <!-- <script src="/js/nav.js" defer></script> -->
-    <!-- FAV ICON HERE --- REMEBER -->
     <title>Search: GNOZO</title>
     <link rel="stylesheet" href="css/_style.css" />
     <style>
+      .groupsOutput {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 45% 45%;
+        justify-content: space-around;
+      }
+
+      .first > *,
+      .second > * {
+        display: block;
+        border: 2px solid green;
+      }
+
+      .first,
+      .second {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .groupsOutput > * {
+        /* border: 2px solid grey; */
+        /* height: auto; */
+      }
+
+      .searchGroups {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        justify-content: space-around;
+        row-gap: 1em;
+      }
+
+      .searchGroups > * {
+        background-color: rgb(86, 85, 85);
+        padding: 1em;
+
+        display: grid;
+        place-items: center;
+      }
       .hidden {
         display: none;
+      }
+
+      #searchInput {
+        background-color: inherit;
+        border: none;
+        border-radius: 0px;
+        border-bottom: 0.1px solid grey;
+        outline: none;
+        color: whitesmoke;
+        width: 100%;
+      }
+
+      #searcInput:focus {
+        outline: none;
+      }
+
+      #searchInput::placeholder {
+        color: grey;
       }
     </style>
   </head>
 
   <body>
-    <main id="home"></main>
-    <section id="search" class="container hidden">
-      <form>
-        <!-- REMEBER TO E.PREVENT DEFAULT FOR FORM IN JS -->
-        <input
-          type="text"
-          id="searchInput"
-          oninput="search()"
-          placeholder="HI Jesus Loves you"
-        />
-      </form>
-      <div id="searchResults" class="searchResults"></div>
-    </section>
-    <footer>
-      <span class="bnav home">Home</span>
-      <span class="bnav search">Search</span>
-      <span class="bnav about">About</span>
-    </footer>
+    <section id="search" class="container">
+      <div class="row">
+        <div class="col-12">
+          <form>
+            <!-- REMEBER TO E.PREVENT DEFAULT FOR FORM IN JS -->
+            <input
+              class="mx-auto mt-4"
+              type="text"
+              id="searchInput"
+              oninput="searchResource()"
+              placeholder="HI Jesus Loves you"
+            />
+          </form>
+        </div>
+      </div>
 
-    <!-- <script defer src="/js/addEvent.js"></script> -->
+      <div class="row">
+        <div class="col-12">
+          <div id="searchResults" class="searchResults"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 searchGroups mt-3">
+          <div id="" class="groups">Chemistry</div>
+          <div id="" class="groups">PHYsics</div>
+          <div id="" class="groups">MTH</div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="groupsOutput"
+      class="container mx-auto mt-4 groupsOutput hidden"
+    >
+      <div class="first"></div>
+      <div class="second"></div>
+    </section>
+
+    <script>
+      const searchGroups = document.querySelector(".searchGroups");
+      const groups = document.querySelectorAll(".groups");
+      const groupsOutput = document.getElementById("groupsOutput");
+
+      searchGroups.addEventListener("click", (e) => {
+        if (e.target.classList.contains("groups")) {
+          const first = document.querySelector(".first");
+          const second = document.querySelector(".second");
+          second.innerHTML = ``;
+          first.innerHTML = ``;
+
+          // first = ``;
+          // second = ``;
+          engineeringBooks.forEach((resource, index) => {
+            if (
+              resource.keywords.includes(e.target.textContent.toLowerCase())
+            ) {
+              history.pushState(null, null, window.location.href);
+
+              if (index % 2 === 0) {
+                first.innerHTML += `<span class="text-break">${resource.title}</span>`;
+              } else if (index % 2 !== 0) {
+                second.innerHTML += `<span class="text-break">${resource.title}</span>`;
+              }
+            }
+          });
+
+          search.classList.add("hidden");
+          groupsOutput.classList.remove("hidden");
+
+          window.addEventListener("popstate", () => {
+            search.classList.remove("hidden");
+            groupsOutput.classList.add("hidden");
+          });
+        }
+      });
+    </script>
   </body>
 </html>
