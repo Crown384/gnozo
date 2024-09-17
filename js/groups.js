@@ -27,7 +27,8 @@ searchGroups.addEventListener("click", (e) => {
     search.classList.add("hidden");
     groupsOutput.classList.remove("hidden");
 
-    window.addEventListener("popstate", () => {
+    window.addEventListener("popstate", (e) => {
+      e.preventDefault();
       sectionsNav.forEach((section) => {
         section.classList.add("hidden");
       });

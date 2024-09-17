@@ -143,7 +143,8 @@ main.addEventListener("click", (e) => {
     main.classList.add("hidden");
     groupsOutput.classList.remove("hidden");
 
-    window.addEventListener("popstate", () => {
+    window.addEventListener("popstate", (e) => {
+      e.preventDefault();
       main.classList.remove("hidden");
       groupsOutput.classList.add("hidden");
     });
