@@ -101,7 +101,9 @@
     <script defer src="/js/navArrows.js"></script>
 
     <script>
-      
+      window.addEventListener("popstate", (event) => {
+        event.preventDefault();
+      });
     </script>
   </body>
 </html>
