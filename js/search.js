@@ -209,7 +209,8 @@ function searchResource() {
 
   // const resourceTitle = document.querySelector(".resourceTitle");
 
-  window.addEventListener("popstate", () => {
+  window.addEventListener("popstate", (event) => {
+    event.preventDefault();
     searchInput.value = "";
     searchResults.innerHTML = ""; 
   });
