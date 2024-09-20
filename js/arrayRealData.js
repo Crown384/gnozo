@@ -692,3 +692,105 @@ const documents = [
         downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20102%20Gauss%20Law,%20Magnetism%20Current..pdf"
 }
 
+
+const files = [
+  {
+    title: "PHY 102 Electrostatics 2._chocr.html.gz",
+    fileSize: "656.9K",
+    fileType: "html",
+    keywords: [
+      "PHY", "102", "Electrostatics", "2", "Physics", "Electricity", "Electrostatics", "Charge", "Field", "Physics102", "PHY102", "PHY 102"
+    ],
+    courseCode: "PHY 102",
+    semester: "1st semester",
+    downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20102%20Electrostatics%202._chocr.html.gz"
+  },
+  {
+    title: "PHY 102 Gauss Law, Magnetism Current. (1).pdf",
+    fileSize: "262.8K",
+    fileType: "pdf",
+    keywords: [
+      "PHY", "102", "Gauss", "Law", "Magnetism", "Current", "Physics", "Electricity", "Magnetism", "Gauss Law", "Physics102", "PHY102", "PHY 102"
+    ],
+    courseCode: "PHY 102",
+    semester: "1st semester",
+    downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20102%20Gauss%20Law,%20Magnetism%20Current.%20%281%29.pdf"
+  },
+  {
+    title: "PHY 102 Gauss Law, Magnetism Current..pdf",
+    fileSize: "262.8K",
+    fileType: "pdf",
+    keywords: [
+      "PHY", "102", "Gauss", "Law", "Magnetism", "Current", "Physics", "Electricity", "Magnetism", "Gauss Law", "Physics102", "PHY102", "PHY 102"
+    ],
+    courseCode: "PHY 102",
+    semester: "1st semester",
+    downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20102%20Gauss%20Law,%20Magnetism%20Current..pdf"
+  },
+  {
+    title: "PHY 102 Self inductance, Mutual inductance, Transformers..pdf",
+    fileSize: "1.0M",
+    fileType: "pdf",
+    keywords: [
+      "PHY", "102", "Self", "inductance", "Mutual", "Transformers", "Physics", "Electricity", "Inductance", "Transformer", "Physics102", "PHY102", "PHY 102"
+    ],
+    courseCode: "PHY 102",
+    semester: "1st semester",
+    downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20102%20Self%20inductance,%20Mutual%20inductance,%20Transformers..pdf"
+  },
+  {
+    title: "PHY 102 Tutorial QUE 2017'18..pdf",
+    fileSize: "52.6K",
+    fileType: "pdf",
+    keywords: [
+      "PHY", "102", "Tutorial", "QUE", "2017", "2018", "Physics", "Questions", "Practice", "Exam", "Physics102", "PHY102", "PHY 102"
+    ],
+    courseCode: "PHY 102",
+    semester: "1st semester",
+    downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20102%20Tutorial%20QUE%202017'18..pdf"
+  },
+  {
+    title: "PHY_102_Conductors,_Currents,_Resistors,_Resistance_and_power_.pdf",
+    fileSize: "358.7K",
+    fileType: "pdf",
+    keywords: [
+      "PHY", "102", "Conductors", "Currents", "Resistors", "Resistance", "Power", "Electricity", "Physics", "Circuits", "Physics102", "PHY102", "PHY 102"
+    ],
+    courseCode: "PHY 102",
+    semester: "1st semester",
+    downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY_102_Conductors,_Currents,_Resistors,_Resistance_and_power_.pdf"
+  },
+  {
+    title: "Phrof_Malomo's_Students_Copy_CHM_102_Tutorial_Questions_Populated.pdf",
+    fileSize: "318.9K",
+    fileType: "pdf",
+    keywords: [
+      "Phrof", "Malomo", "Students", "Copy", "CHM", "102", "Tutorial", "Questions", "Populated", "Chemistry", "101", "CHM102", "CHM 102"
+    ],
+    courseCode: "CHM 102",
+    semester: "1st semester",
+    downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./Phrof_Malomo's_Students_Copy_CHM_102_Tutorial_Questions_Populated.pdf"
+  },
+  {
+    title: "gst-102-english_202409_meta.sqlite",
+    fileSize: "84.0K",
+    fileType: "sqlite",
+    keywords: [
+      "gst", "102", "english", "202409", "meta", "database", "communication", "skills", "course", "GST102", "GST 102"
+    ],
+    courseCode: "GST 102",
+    semester: "1st semester",
+    downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./gst-102-english_202409_meta.sqlite"
+  },
+  {
+    title: "gst-102-english_202409_meta.xml",
+    fileSize: "38.4K",
+    fileType: "xml",
+    keywords: [
+      "gst", "102", "english", "202409", "meta", "data", "metadata", "communication", "skills", "course", "GST102", "GST 102"
+    ],
+    courseCode: "GST 102",
+    semester: "1st semester",
+    downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./gst-102-english_202409_meta.xml"
+  }
+];
