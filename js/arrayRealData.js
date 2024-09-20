@@ -376,3 +376,68 @@ const documents = [
   }
 ]
 
+const files = [
+    {
+        title: "PHY 101 Newton's Laws of Motion",
+        fileSize: "120.3K",
+        fileType: "pdf",
+        keywords: ["Newton", "laws", "motion", "101", "PHY", "PHY 101"],
+        courseCode: "PHY 101",
+        semester: "1st semester",
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics/PHY%20101%20Newton's%20Laws%20of%20Motion..pdf"
+    },
+    {
+        title: "PHY 101 Relativity of Simultaneity",
+        fileSize: "169.3K",
+        fileType: "pdf",
+        keywords: ["relativity", "simultaneity", "101", "PHY", "PHY 101"],
+        courseCode: "PHY 101",
+        semester: "1st semester",
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics/PHY%20101%20Relativity%20of%20Simultaneity..pdf"
+    },
+    {
+        title: "PHY 101 Relativity",
+        fileSize: "1.1M",
+        fileType: "pdf",
+        keywords: ["relativity", "101", "PHY", "PHY 101"],
+        courseCode: "PHY 101",
+        semester: "1st semester",
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics/PHY%20101%20Relativity..Pdf"
+    },
+    {
+        title: "PHY 101 Vector Projectile and Circular Motion",
+        fileSize: "84.6K",
+        fileType: "pdf",
+        keywords: ["vector", "projectile", "circular", "motion", "101", "PHY", "PHY 101"],
+        courseCode: "PHY 101",
+        semester: "1st semester",
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics/PHY%20101%20Vector%20Projectile%20and%20Circular%20Motion..pdf"
+    },
+    {
+        title: "PHY 101 Work and Energy",
+        fileSize: "353.3K",
+        fileType: "pdf",
+        keywords: ["work", "energy", "101", "PHY", "PHY 101"],
+        courseCode: "PHY 101",
+        semester: "1st semester",
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics/PHY%20101%20Work%20and%20Enegry..pdf"
+    },
+    {
+        title: "PHY 101 Velocity and Acceleration vectors, Projectile and Circular",
+        fileSize: "124.4K",
+        fileType: "pdf",
+        keywords: ["velocity", "acceleration", "vectors", "projectile", "circular", "101", "PHY", "PHY 101"],
+        courseCode: "PHY 101",
+        semester: "1st semester",
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics/PHY_101_Velocity_and_Acceleration_vectors,_Projectile_and_Circular.pdf"
+    },
+    {
+        title: "Phy 101 Motion in One Dimension",
+        fileSize: "657.0K",
+        fileType: "pdf",
+        keywords: ["motion", "dimension", "101", "PHY", "PHY 101"],
+        courseCode: "PHY 101",
+        semester: "1st semester",
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics/Phy%20101%20Motion%20in%20one%20dimension..pdf"
+    }
+];
