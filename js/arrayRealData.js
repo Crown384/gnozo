@@ -528,3 +528,167 @@ const documents = [
     }
 ];
 
+const documents = [
+    {
+        title: "GST 110 Week 1",
+        fileSize: "254.4K",
+        fileType: "pdf",
+        keywords: ['GST', '110', 'GST 110', 'week', '1'],
+        courseCode: 'GST 110',
+        semester: '1st semester',
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20110%20Week%201.pdf"
+    },
+    {
+        title: "GST 110 Week 2",
+        fileSize: "417.7K",
+        fileType: "pdf",
+        keywords: ['GST', '110', 'GST 110', 'week', '2'],
+        courseCode: 'GST 110',
+        semester: '1st semester',
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20110%20Week%202.pdf"
+    },
+    {
+        title: "GST 110 Week 3",
+        fileSize: "306.1K",
+        fileType: "pdf",
+        keywords: ['GST', '110', 'GST 110', 'week', '3'],
+        courseCode: 'GST 110',
+        semester: '1st semester',
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20110%20Week%203.pdf"
+    },
+    {
+        title: "GST 110 Week 4",
+        fileSize: "206.9K",
+        fileType: "pdf",
+        keywords: ['GST', '110', 'GST 110', 'week', '4'],
+        courseCode: 'GST 110',
+        semester: '1st semester',
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20110%20Week%204.pdf"
+    },
+    {
+        title: "GST 110 Week 5",
+        fileSize: "407.4K",
+        fileType: "pdf",
+        keywords: ['GST', '110', 'GST 110', 'week', '5'],
+        courseCode: 'GST 110',
+        semester: '1st semester',
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20110%20Week%205.pdf"
+    },
+    {
+        title: "GST 110 Week 6",
+        fileSize: "284.4K",
+        fileType: "pdf",
+        keywords: ['GST', '110', 'GST 110', 'week', '6'],
+        courseCode: 'GST 110',
+        semester: '1st semester',
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20110%20Week%206.pdf"
+    },
+    {
+        title: "GST 110 Week 7",
+        fileSize: "231.7K",
+        fileType: "pdf",
+        keywords: ['GST', '110', 'GST 110', 'week', '7'],
+        courseCode: 'GST 110',
+        semester: '1st semester',
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20110%20Week%207.pdf"
+    },
+    {
+        title: "Mth 102 Ass Solution by B.sc",
+        fileSize: "1.6M",
+        fileType: "pdf",
+        keywords: ['Mth', '102', 'Mth 102', 'ass', 'solution', 'B.sc'],
+        courseCode: 'Mth 102',
+        semester: '1st semester',
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./Mth%20102%20Ass%20Solution%20by%20B.sc.pdf"
+    },
+    {
+        title: "PHY Atomic structure",
+        fileSize: "1.1M",
+        fileType: "pdf",
+        keywords: ['PHY', 'atomic', 'structure'],
+        courseCode: 'PHY',
+        semester: '1st semester',
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20Atomic%20structure..pdf"
+    },
+    {
+        title: "PHY Electricity",
+        fileSize: "356.0K",
+        fileType: "pdf",
+        keywords: ['PHY', 'electricity'],
+        courseCode: 'PHY',
+        semester: '1st semester',
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20Electricity..pdf"
+    },
+    {
+        title: "PHY Surface Tension",
+        fileSize: "83.7K",
+        fileType: "pdf",
+        keywords: ['PHY', 'surface', 'tension'],
+        courseCode: 'PHY',
+        semester: '1st semester',
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20Surface%20Tension..pdf"
+    },
+    {
+        title: "PHY 102 Coulomb's Law",
+        fileSize: "371.3K",
+        fileType: "pdf",
+        keywords: ['PHY', '102', 'Coulomb', 'law'],
+        courseCode: 'PHY 102',
+        semester: '1st semester',
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20102%20Coulomb's%20Law..pdf"
+    },
+    {
+        title: "PHY 102 Electric Field",
+        fileSize: "375.3K",
+        fileType: "pdf",
+        keywords: ['PHY', '102', 'electric', 'field'],
+        courseCode: 'PHY 102',
+        semester: '1st semester',
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20102%20Electric%20Field..pdf"
+    },
+    {
+        title: "PHY 102 Electromagnetic induction",
+        fileSize: "718.4K",
+        fileType: "pdf",
+        keywords: ['PHY', '102', 'electromagnetic', 'induction'],
+        courseCode: 'PHY 102',
+        semester: '1st semester',
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20102%20Electromagnetic%20induction..pdf"
+    },
+    {
+        title: "PHY 102 Electrostatic Force",
+        fileSize: "7.8M",
+        fileType: "pdf",
+        keywords: ['PHY', '102', 'electrostatic', 'force'],
+        courseCode: 'PHY 102',
+        semester: '1st semester',
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20102%20Electrostatic%20Force..pdf"
+    },
+    {
+        title: "PHY 102 Electrostatics 1",
+        fileSize: "1.5M",
+        fileType: "pdf",
+        keywords: ['PHY', '102', 'electrostatics', '1'],
+        courseCode: 'PHY 102',
+        semester: '1st semester',
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20102%20Electrostatics%201..pdf"
+    },
+    {
+        title: "PHY 102 Electrostatics 2",
+        fileSize: "228.6K",
+        fileType: "pdf",
+        keywords: ['PHY', '102', 'electrostatics', '2'],
+        courseCode: 'PHY 102',
+        semester: '1st semester',
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20102%20Electrostatics%202..pdf"
+    },
+    {
+        title: "PHY 102 Gauss Law, Magnetism Current",
+        fileSize: "262.8K",
+        fileType: "pdf",
+        keywords: ['PHY', '102', 'Gauss', 'law', 'magnetism', 'current'],
+        courseCode: 'PHY 102',
+        semester: '1st semester',
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20102%20Gauss%20Law,%20Magnetism%20Current..pdf"
+}
+
