@@ -441,3 +441,90 @@ const files = [
         downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics/Phy%20101%20Motion%20in%20one%20dimension..pdf"
     }
 ];
+
+// SECOND SEMESTER
+
+const documents = [
+    {
+        title: "CHM 101 1st and 2nd order reaction",
+        fileSize: "20.4K",
+        fileType: "pdf",
+        keywords: ['CHM', '101', 'CHM 101', '1st', '2nd', 'order', 'reaction'],
+        courseCode: 'CHM 101',
+        semester: '1st semester',
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./CHM%20101%201st%20and%202nd%20order%20reaction..pdf"
+    },
+    {
+        title: "CHM 101 Aromatic Nomenclature Practice Problems",
+        fileSize: "24.0K",
+        fileType: "doc",
+        keywords: ['CHM', '101', 'CHM 101', 'aromatic', 'nomenclature', 'practice', 'problems'],
+        courseCode: 'CHM 101',
+        semester: '1st semester',
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./CHM%20101%20Aromatic%20Nomenclature%20Practice%20Problems..doc"
+    },
+    {
+        title: "CHM 101 Chemical Equilibrium",
+        fileSize: "24.0K",
+        fileType: "pdf",
+        keywords: ['CHM', '101', 'CHM 101', 'chemical', 'equilibrium'],
+        courseCode: 'CHM 101',
+        semester: '1st semester',
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./CHM%20101%20Chemical%20Equilibrium..pdf"
+    },
+    {
+        title: "GST 101 Communication Listening Skills Reading Skills",
+        fileSize: "385.0K",
+        fileType: "pdf",
+        keywords: ['GST', '101', 'GST 101', 'communication', 'listening', 'skills', 'reading'],
+        courseCode: 'GST 101',
+        semester: '1st semester',
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20101%20Communication%20Listening%20Skills%20Reading%20Skills.%20%281%29.pdf"
+    },
+    {
+        title: "GST 103 All Together ICT",
+        fileSize: "24.0K",
+        fileType: "pdf",
+        keywords: ['GST', '103', 'GST 103', 'all', 'together', 'ICT'],
+        courseCode: 'GST 103',
+        semester: '1st semester',
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20103%20All%20Together%20ICT.%20%281%29.pdf"
+    },
+    {
+        title: "GST 102 English",
+        fileSize: "16.6M",
+        fileType: "pdf",
+        keywords: ['GST', '102', 'GST 102', 'english'],
+        courseCode: 'GST 102',
+        semester: '1st semester',
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20102%20English.pdf"
+    },
+    {
+        title: "GST 102 MCQ by B.sc",
+        fileSize: "133.6K",
+        fileType: "pdf",
+        keywords: ['GST', '102', 'GST 102', 'MCQ', 'B.sc'],
+        courseCode: 'GST 102',
+        semester: '1st semester',
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20102%20MCQ%20by%20B.sc.pdf"
+    },
+    {
+        title: "GST 102 Part Of Speech",
+        fileSize: "55.1K",
+        fileType: "pdf",
+        keywords: ['GST', '102', 'GST 102', 'part', 'of', 'speech'],
+        courseCode: 'GST 102',
+        semester: '1st semester',
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20102%20Part%20Of%20Speech.pdf"
+    },
+    {
+        title: "GST 108 Handout",
+        fileSize: "3.7M",
+        fileType: "pdf",
+        keywords: ['GST', '108', 'GST 108', 'handout'],
+        courseCode: 'GST 108',
+        semester: '1st semester',
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20108%20Handout..pdf"
+    }
+];
+
