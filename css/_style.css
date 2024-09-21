@@ -48,8 +48,6 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   color: whitesmoke;
-
-  display: grid;
 }
 
 h2 {
@@ -163,13 +161,11 @@ footer {
   justify-content: space-around;
   cursor: pointer;
   width: 90%;
-  margin: 0 auto;
+  margin: 0 5vw;
 
   background-color: #1e1f21;
   padding: 1rem 1rem;
   margin-bottom: 0.5rem;
-
-  justify-self: center;
 }
 .searchResults {
   margin-top: 2rem;
