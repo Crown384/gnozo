@@ -23,11 +23,11 @@
 }
 
 .first span, .second span {
-  font-size: 1.2rem;
-  font-weight: 600;
+  /* font-size: 1.2rem; */
+  /* font-weight: 600; */
 }
 
-.first .details, .second .details {
+.details {
   color: grey;
   font-size: 15px;
 }
@@ -82,7 +82,6 @@
   border-bottom: 0.1px solid grey;
   outline: none;
   color: whitesmoke;
-  width: 100%;
 }
 
 #searcInput:focus {
