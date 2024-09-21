@@ -6,7 +6,7 @@ main.addEventListener("click", (e) => {
     const second = document.querySelector(".second");
     second.innerHTML = ``;
     first.innerHTML = ``;
-    console.log(e.target.nextElementSibling);
+    // console.log(e.target.nextElementSibling);
 
     // first = ``;
     // second = ``;

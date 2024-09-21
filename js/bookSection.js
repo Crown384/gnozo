@@ -2,7 +2,9 @@ const sections = [
   {title: "CHM 101",},
   {title: "PHY 101",},
   {title: "MTH 102",},
+  {title: "MTH 101",},
   {title: "GST",},
+  {title: "MTH",},
   {title: "GST 101",},
   {title: "GST 103",},
   {title: "GST 105",},
@@ -36,7 +38,7 @@ function createSections() {
     <div class="header">
       <h3>${section.title}</h3>
       <div>
-        <p class="navArrow material-symbols-rounded">east</p>
+        <p class="navArrow material-symbols-rounded me-2">east</p>
         <p class="hidden">${section.title}</p>
       </div>
     </div>

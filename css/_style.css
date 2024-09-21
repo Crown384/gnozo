@@ -97,6 +97,7 @@ span {
 /* JESUS */
 body>section, main{
   margin-bottom: 5rem;
+  width: 99%;
 }
 
 section .header {
