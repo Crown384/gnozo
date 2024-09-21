@@ -2,6 +2,10 @@ const sections = [
   {title: "CHM 101",},
   {title: "PHY 101",},
   {title: "MTH 102",},
+  {title: "GST",},
+  {title: "GST 101",},
+  {title: "GST 103",},
+  {title: "GST 105",},
 ];
 
 function shuffle(array) {
@@ -29,10 +33,10 @@ function createSections() {
 
   shuffledSections.forEach((section) => {
     const sectionHTML = `
-            <div class="header">
+    <div class="header">
       <h3>${section.title}</h3>
       <div>
-        <p class="navArrow">navArrow</p>
+        <p class="navArrow material-symbols-rounded">east</p>
         <p class="hidden">${section.title}</p>
       </div>
     </div>

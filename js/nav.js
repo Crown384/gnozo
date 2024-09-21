@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
       sectionsNav.forEach((section) => {
         section.classList.add("hidden");
       });
+      searchGroups.classList.remove('hidden');
       // REAL ONE TO BE SHOWN
       search.classList.remove("hidden");
 
@@ -46,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // REAL ONE TO BE SHOWN
       main.classList.remove("hidden");
       searchInput.value = "";
+      searchGroups.classList.remove('hidden');
 
       window.addEventListener("popstate", () => {
         window.history.back();

@@ -22,12 +22,12 @@
   padding: 1em;
 }
 
-.first span {
+.first span, .second span {
   font-size: 1.2rem;
   font-weight: 600;
 }
 
-.first .details {
+.first .details, .second .details {
   color: grey;
   font-size: 15px;
 }
@@ -57,13 +57,22 @@
 }
 
 .searchGroups > * {
-  background-color: rgb(86, 85, 85);
+  background-color: #1e1f21;
   padding: 1em;
 
-  display: grid;
-  place-items: center;
+  display: flex;
+  /* place-items: center; */
+  justify-content: space-between;
+  align-items: center;
 
   cursor: pointer;
+
+  border-radius: 0.5rem;
+}
+
+.searchGroups div:first-child {
+  width: 100%;
+  height: 100%;
 }
 
 #searchInput {

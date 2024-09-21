@@ -48,6 +48,8 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   color: whitesmoke;
+
+  display: grid;
 }
 
 h2 {
@@ -85,10 +87,18 @@ span {
   -webkit-line-clamp: 3;
 }
 
-/* JESUS */
+.smalls {
+  color: grey;
+  font-weight: 400;
+}
 
-section {
-  width: 100%;
+.resourceTitle {
+  font-weight: 600;
+}
+
+/* JESUS */
+body>section, main{
+  margin-bottom: 5rem;
 }
 
 section .header {
@@ -127,7 +137,7 @@ a {
   width: 0.01em;
 }
 
-.test > * {
+.test>* {
   display: grid;
   gap: 0.5em;
   grid-auto-flow: column;
@@ -148,10 +158,39 @@ footer {
   display: flex;
   position: fixed;
   bottom: 0;
-  width: 100%;
+  /* width: 100%; */
 
   justify-content: space-around;
   cursor: pointer;
+  width: 90%;
+  margin: 0 auto;
+
+  background-color: #1e1f21;
+  padding: 1rem 1rem;
+  margin-bottom: 0.5rem;
+
+  justify-self: center;
+}
+.searchResults {
+  margin-top: 2rem;
+  /* display: flex;
+  flex-wrap: wrap; */
+
+  display: grid;
+  /* grid-auto-flow: column; */
+  grid-template-columns: 45% 45%;
+  grid-auto-rows: auto;
+}
+.searchResults > * {
+  /* THERE WILL BE MEDIA QUERY FOR THIS */
+  display: inline-block;
+  height: auto;
+  /* width: 40%; */
+
+  border: 2px solid whitesmoke;
+  border-radius: 1em;
+  /* padding: 1rem; */
+  /* margin: 0.5rem 0; */
 }
 
 /* BOOTSTRAP BREAKPOINTS */
@@ -171,11 +210,14 @@ svg {
 .authorSVG {
   fill: whitesmoke;
 }
+
 @media screen and (min-width: 576px) {
   svg {
     height: 48px;
     width: 48px;
     stroke-width: 10px;
     stroke: whitesmoke;
+
+    fill: grey;
   }
 }
