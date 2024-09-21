@@ -175,7 +175,7 @@ footer {
   /* grid-auto-flow: column; */
   grid-template-columns: 45% 45%;
   grid-auto-rows: auto;
-  margin: 0 5vw;
+  margin: 0 2.5vw;
   margin-top: 2rem;
 }
 .searchResults > * {
