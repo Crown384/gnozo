@@ -161,21 +161,22 @@ footer {
   justify-content: space-around;
   cursor: pointer;
   width: 90%;
-  margin: 0 5vw;
 
   background-color: #1e1f21;
   padding: 1rem 1rem;
+  margin: 0 5vw;
   margin-bottom: 0.5rem;
 }
 .searchResults {
-  margin-top: 2rem;
   /* display: flex;
   flex-wrap: wrap; */
-
+  
   display: grid;
   /* grid-auto-flow: column; */
   grid-template-columns: 45% 45%;
   grid-auto-rows: auto;
+  margin: 0 5vw;
+  margin-top: 2rem;
 }
 .searchResults > * {
   /* THERE WILL BE MEDIA QUERY FOR THIS */
@@ -185,8 +186,12 @@ footer {
 
   border: 2px solid whitesmoke;
   border-radius: 1em;
-  /* padding: 1rem; */
+  padding: 1rem;
   /* margin: 0.5rem 0; */
+}
+
+.searchResults .details {
+  color: gray;
 }
 
 /* BOOTSTRAP BREAKPOINTS */
@@ -203,8 +208,12 @@ svg {
   height: 24px;
 }
 
-.authorSVG {
+/* .authorSVG {
   fill: whitesmoke;
+} */
+
+.groupSVG {
+  fill: lightblue;
 }
 
 @media screen and (min-width: 576px) {

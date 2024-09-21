@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
           }
 
           // Append resource content
-          targetDiv.innerHTML += `<span class="btn btn-outline-light Rbutton">${resource.title}</span>`;
+          targetDiv.innerHTML += `<span class="btn btn-outline-light Rbutton homeText">${resource.title}</span>`;
         });
 
         // Append the divs to the container

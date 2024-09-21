@@ -61,7 +61,7 @@ main.addEventListener("click", (e) => {
               <div class="row mt-4">
                 <div id="arrowBack" class="col-12 material-symbols-rounded">west</div>
                 <div class="col-12 mt-4">
-                  <span class="mt-4 h4 resourceTitle text-break">${specifyMaterial.title}</span>
+                  <span class="mt-4 h4 specificTitle text-break">${specifyMaterial.title}</span>
                 </div>
               </div>
 
