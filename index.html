@@ -22,6 +22,12 @@
   <title>Gnozo: COT IKOLE</title>
   <link rel="stylesheet" href="css/_style.css" />
   <link rel="manifest" href="manifest.json" />
+<script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
+  }
+</script>
+
   <style>
     main .container>section {
       margin-top: 1.2rem;
