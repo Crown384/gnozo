@@ -31,8 +31,12 @@ document.addEventListener("DOMContentLoaded", () => {
         section.classList.add("hidden");
       });
       searchGroups.classList.remove('hidden');
+      footer.querySelector('.home').classList.remove("active");
+      footer.querySelector('.about').classList.remove("active");
       // REAL ONE TO BE SHOWN
       search.classList.remove("hidden");
+      search.classList.add("active");
+      footer.querySelector('.search').classList.add("active");
 
       window.addEventListener("popstate", () => {
         window.history.back();
@@ -44,10 +48,16 @@ document.addEventListener("DOMContentLoaded", () => {
       sectionsNav.forEach((section) => {
         section.classList.add("hidden");
       });
+      footer.querySelector('.search').classList.remove("active");
+      footer.querySelector('.about').classList.remove("active");
       // REAL ONE TO BE SHOWN
       main.classList.remove("hidden");
+      main.classList.add("active");
       searchInput.value = "";
       searchGroups.classList.remove('hidden');
+      // e.target.classList.add("active");
+      footer.querySelector('.home').classList.add("active");
+
 
       window.addEventListener("popstate", () => {
         window.history.back();
@@ -59,7 +69,11 @@ document.addEventListener("DOMContentLoaded", () => {
       sectionsNav.forEach((section) => {
         section.classList.add("hidden");
       });
+      footer.querySelector('.search').classList.remove("active");
+      footer.querySelector('.about').classList.remove("active");
       // REAL ONE TO BE SHOWN
+      // about.classList.add("active");
+      footer.querySelector('.about').classList.add("active");
       about.classList.remove("hidden");
     }
 

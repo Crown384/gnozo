@@ -1,18 +1,3 @@
-// This is the "Offline copy of pages" service worker
 
-const CACHE = "pwabuilder-offline";
-
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
-
-self.addEventListener("message", (event) => {
-  if (event.data && event.data.type === "SKIP_WAITING") {
-    self.skipWaiting();
-  }
-});
-
-workbox.routing.registerRoute(
-  new RegExp('/*'),
-  new workbox.strategies.StaleWhileRevalidate({
-    cacheName: CACHE
-  })
-);
+  import { precacheAndRoute } from 'workbox-precaching/precacheAndRoute';
+  precacheAndRoute([{"revision":"824d9b7723c827a654253f124608f962","url":"accordion.html"},{"revision":"6d31fbc3f7548af1513f0c18ab69b9c4","url":"bookPage.html"},{"revision":"e3000f724010807e7652ce2ead3a8c3f","url":"css/_style.css"},{"revision":"dca2e649a73a5c9bca169a3956b1bc1f","url":"css/main.min.css"},{"revision":"f8b48d714867a332c5a0de9b3293ec70","url":"css/search.css"},{"revision":"0e7fcf5fd8fab3e7ac732716ef31adc1","url":"extras/svg.html"},{"revision":"d3a0938036eced97f4f2f995c6f99357","url":"index.html"},{"revision":"3e3c9758e99a329c28daa3d70ec12530","url":"js/_index.js"},{"revision":"7aef9e8c14bf7a47ed3b588027eec50e","url":"js/addEvent.js"},{"revision":"2eae4bbbfb6f2bd7b163a3c090e1a48f","url":"js/arrayRealData.js"},{"revision":"aeee1e7289349c11795bbbfbd85084ca","url":"js/bookSection.js"},{"revision":"d50b7280eba971ace7eda9fa14fabc36","url":"js/DynamicResourceLoading.js"},{"revision":"5d1a37373a79d33b016cbfcdfd713fd2","url":"js/groups.js"},{"revision":"92d703f8e9049042022abe2ea5fa5eac","url":"js/LoadBook.js"},{"revision":"e252ff1f0ff6fddfb935fe6dd617a7cf","url":"js/nav.js"},{"revision":"38d300b825d9967ff3e89041969fe72b","url":"js/navArrows.js"},{"revision":"0b7ee6e435672d492cc7590259264d2a","url":"js/search.js"},{"revision":"675ce34d0ca73466a297d22d3d8ea589","url":"search.html"},{"revision":"9046b4a1aa29576fb8e8a15fda4da05f","url":"searchPage_TEST.html"},{"revision":"ccbfffd234622aa9d1dfb8e4701cb275","url":"test.html"}]);

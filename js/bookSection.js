@@ -30,7 +30,7 @@ function createSections() {
 
   shuffledSections.forEach((section) => {
     const sectionHTML = `
-    <div class="header">
+    <div class="header" style="color: #34ac88">
       <h3>${section.title}</h3>
       <div>
         <p class="navArrow material-symbols-rounded me-2">east</p>

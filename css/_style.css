@@ -41,7 +41,9 @@
   --text-color: #183153;
   --btn-bg-color: purple;
 }
-
+.active {
+  color: #34ac88;
+}
 body {
   font-family: "CeraPro", Helvetica, sans-serif;
 
