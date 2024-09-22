@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
       footer.querySelector('.about').classList.remove("active");
       // REAL ONE TO BE SHOWN
       main.classList.remove("hidden");
-      main.classList.add("active");
+     // main.classList.add("active");
       searchInput.value = "";
       searchGroups.classList.remove('hidden');
       // e.target.classList.add("active");
