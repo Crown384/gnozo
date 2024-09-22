@@ -119,15 +119,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Use the section filters
   const sectionFilters = [
-    { keywords: ["chm 101", "chm101","chemistry", "james"], containerIds: ["CHM 101"] },
-    { keywords: ["phy 101", 'phy101', "physics", "phy"], containerIds: ["PHY 101"] },
-    { keywords: ["mth 102",'mth102'], containerIds: ["MTH 102"] },
-    { keywords: ["mth 101", "mathematics", 'mth101'], containerIds: ["MTH 101"] },
     { keywords: ['gst'], containerIds: ["GST"] },
     { keywords: ['mth'], containerIds: ["MTH"] },
-    { keywords: ['gst 101'], containerIds: ["GST 101"] },
-    { keywords: ['gst 103'], containerIds: ["GST 103"] },
-    { keywords: ['gst 105'], containerIds: ["GST 105"] },
+    { keywords: ['phy'], containerIds: ["PHY"] },
+    { keywords: ['chm'], containerIds: ["CHM"] },
   ];
 
   sectionFilters.forEach((filter) => {

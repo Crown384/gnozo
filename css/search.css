@@ -50,7 +50,7 @@
 
 .searchGroups {
   display: grid;
-  grid-template-columns: 45% 45%;
+  grid-template-columns: 49% 49%;
   justify-content: space-around;
   row-gap: 1em;
   cursor: pointer;

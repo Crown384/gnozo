@@ -1,0 +1,21 @@
+{
+    "name": "GNOZO: COT IKOLE",
+    "short_name": "Gnozo",
+    "description": "Gnozo is an app designed by the academic unit at Chapel of Transformation (COT) Ikole, to foster academic success by bringing students, especially Freshmen, with resources needed to achieve their academic goals",
+    "icons": [
+        {
+            "src": "/assets/images/COT_192X192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/COT_512X512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#34ac88",
+    "background_color": "#131313"
+}

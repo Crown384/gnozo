@@ -1,13 +1,8 @@
 const sections = [
-  {title: "CHM 101",},
-  {title: "PHY 101",},
-  {title: "MTH 102",},
-  {title: "MTH 101",},
+  {title: "CHM",},
   {title: "GST",},
   {title: "MTH",},
-  {title: "GST 101",},
-  {title: "GST 103",},
-  {title: "GST 105",},
+  {title: "PHY",},
 ];
 
 function shuffle(array) {
