@@ -1,6 +1,6 @@
 {
 "name": "GNOZO: COT IKOLE",
-"short_name": "This name will show in your Windows taskbar, in the start menu, and Android homescreen",
+"short_name": "Gnozo",
 "start_url": "/",
 "display": "standalone",
 "description": "GNOZO is a PWA designed by developers at the academic unit at Chapel of Transformation (COT) Ikole, to foster academic success, by bridging the gap between students, especially Freshmen, and resources needed to achieve their academic goals",
@@ -25,10 +25,10 @@
 ],
 "screenshots": [
     {
-        "src": "https://www.pwabuilder.com/assets/screenshots/screen1.png",
+        "src": "/assets/images/screenshot.png",
         "sizes": "2880x1800",
         "type": "image/png",
-        "description": "A screenshot of the home page"
+        "description": "Homepage"
     }
 ],
 "related_applications": [
