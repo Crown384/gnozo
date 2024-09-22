@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
         section.classList.add("hidden");
       });
       footer.querySelector('.search').classList.remove("active");
-      footer.querySelector('.about').classList.remove("active");
+      footer.querySelector('.home').classList.remove("active");
       // REAL ONE TO BE SHOWN
       // about.classList.add("active");
       footer.querySelector('.about').classList.add("active");
