@@ -2,6 +2,11 @@
 font-size: 0.9rem
 }
 
+. groups svg {
+width: 12px;
+height: 12px;
+}
+
 .groupsOutput, .navArrows {
   display: grid;
   grid-auto-flow: column;
