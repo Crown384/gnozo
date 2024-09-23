@@ -73,6 +73,10 @@
       cursor: pointer;
     }
 
+    .accordion {
+      color: whitesmoke;
+    }
+
     #arrowBack {
       cursor: pointer;
     }
@@ -82,21 +86,27 @@
 <body>
   <main id="home" class="">
     <h2 class="container mt-3 mb-0">Home</h2>
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="2200" height="2200">
-        <path style="fill:#34ac88; stroke:none;" d="M0 0L0 2200L2200 2200L2200 0L0 0z" />
-      </svg> -->
     <div class="container">
       <span class="container rounded-pill"
         style="width: 3ch; height: 1ch; background-color: whitesmoke; display: inline-block;"></span>
       <span
         style="border-radius: 50%; height: 1ch; width: 1ch; background-color: #34ac88; display: inline-block;"></span>
     </div>
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="2200" height="2200">
+        <path style="fill:#34ac88; stroke:none;" d="M0 0L0 2200L2200 2200L2200 0L0 0z" />
+      </svg> -->
   </main>
 
   <section class="output hidden"></section>
 
   <section id="search" class="container hidden">
-    <h2 class="mt-4">Search</h2>
+    <h2 class="container mt-3 mb-0">Search</h2>
+    <div class="container">
+      <span class="container rounded-pill"
+        style="width: 5ch; height: 1ch; background-color: whitesmoke; display: inline-block;"></span>
+      <span
+        style="border-radius: 50%; height: 1ch; width: 1ch; background-color: #34ac88; display: inline-block;"></span>
+    </div>
     <div class="row">
       <div class="col-12">
         <form>
@@ -213,48 +223,109 @@
   </section>
 
   <section id="about" class=" hidden">
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            Accordion Item #1
+    <h2 class="container mt-3 mb-0">About</h2>
+    <div class="container">
+      <span class="container rounded-pill"
+        style="width: 3ch; height: 1ch; background-color: whitesmoke; display: inline-block;"></span>
+      <span
+        style="border-radius: 50%; height: 1ch; width: 1ch; background-color: #34ac88; display: inline-block;"></span>
+    </div>
+    <!-- ACCORDION -->
+    <div style="background-color: #131313; color: white;" class="container accordion accordion-flush mt-4"
+      id="accordionFlushExample">
+      <div class="accordion-item" style="background-color: #131313;">
+        <h2 class="accordion-header" style="background-color: #131313;">
+          <button style="background-color: #131313;" class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+            aria-controls="flush-collapseOne">
+            About Gnozo
           </button>
         </h2>
         <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-            <code>.accordion-flush</code> class. This is the first item's accordion body.
+          <div style="background-color: #131313; color: rgb(179, 169, 169);" class="accordion-body">
+            <code style="font-weight: 400;">Gnozo</code> is a TWA designed by the academic unit of Chapel of
+            Transformation (Ikole Chapter) to assist in your academic journey towards excellence, by bridging the gap
+            between students, especially Freshmen, and the needed resources to achieve academic goals.
           </div>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-            Accordion Item #2
+
+      <!-- Meet the Chaplain -->
+      <div class="accordion-item" style="background-color: #131313;">
+        <h2 class="accordion-header" style="background-color: #131313;">
+          <button style="background-color: #131313;" class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#MeetTheChaplain" aria-expanded="false"
+            aria-controls="flush-collapseOne">
+            Meet the Chaplain
           </button>
         </h2>
-        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-            <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
-            filled with some actual content.
+        <div id="MeetTheChaplain" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div style="background-color: #131313; color: rgb(179, 169, 169);" class="accordion-body">
+            <code style="font-weight: 400;">Engr. James Abioye</code> is currently the assitant Chaplain Ikole for
+            Chapel of Transformation.
+            <p></p>
           </div>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-            Accordion Item #3
+
+      <!-- About COT -->
+      <div class="accordion-item" style="background-color: #131313;">
+        <h2 class="accordion-header" style="background-color: #131313;">
+          <button style="background-color: #131313; font-size: 0.9rem;" class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#AboutChapel" aria-expanded="false"
+            aria-controls="flush-collapseOne">
+            About Chapel of Transformation
           </button>
         </h2>
-        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-            <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
-            happening here in terms of content, but just filling up the space to make it look, at least at first glance,
-            a bit more representative of how this would look in a real-world application.
+        <div id="AboutChapel" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div style="background-color: #131313; color: rgb(179, 169, 169);" class="accordion-body">
+            Chapel of Transformation (COT) is the school chapel at Federal University Oye-Ekiti. Chapel is a home away
+            from home, where all your needs are met, both academically and spiritually. We look forward to seeing you in
+            any of our services. Welcome🤗.
+            <p>We have our weekly services on sunday.... how do i put this ????</p>
+            <p class="mt-2">You can connect with Chapel using the links below</p>
+            <div>
+              <!-- whatsapp -->
+              <span>
+                <a href="#whatsapp">
+                  whatsapp
+                </a>
+              </span>
+
+              <!-- instagram -->
+              <span>
+                <a href="#instagram">
+                  Instagram
+                </a>
+              </span>
+
+              <!-- twitter -->
+              <span>
+                <a href="#twitter">
+                  Twitter
+                </a>
+              </span>
+            </div>
           </div>
         </div>
+      </div>
+
+      <!-- Report a Problem -->
+      <div class="accordion-item" style="background-color: #131313;">
+        <h2 class="accordion-header" style="background-color: #131313;">
+          <button style="background-color: #131313;" class="accordion-button collapsed" type="button" data-bs-toggle="">
+            Report a problem <span class="material-symbols-rounded">report</span>
+          </button>
+        </h2>
+      </div>
+
+      <!-- Version -->
+      <div class="accordion-item" style="background-color: #131313;">
+        <h2 class="accordion-header" style="background-color: #131313;">
+          <button style="background-color: #131313;" class="accordion-button collapsed" type="button" data-bs-toggle="">
+            Version 1.0.0
+          </button>
+        </h2>
       </div>
     </div>
   </section>
