@@ -41,9 +41,11 @@
   --text-color: #183153;
   --btn-bg-color: purple;
 }
+
 .active {
   color: #34ac88;
 }
+
 body {
   font-family: "CeraPro", Helvetica, sans-serif;
 
@@ -97,7 +99,8 @@ span {
 }
 
 /* JESUS */
-body>section, main{
+body>section,
+main {
   margin-bottom: 5rem;
   width: 99%;
 }
@@ -170,10 +173,11 @@ footer {
   margin: 0 5vw;
   margin-bottom: 0.5rem;
 }
+
 .searchResults {
   /* display: flex;
   flex-wrap: wrap; */
-  
+
   display: grid;
   /* grid-auto-flow: column; */
   grid-template-columns: 45% 45%;
@@ -181,7 +185,8 @@ footer {
   margin: 0 2.5vw;
   margin-top: 2rem;
 }
-.searchResults > * {
+
+.searchResults>* {
   /* THERE WILL BE MEDIA QUERY FOR THIS */
   display: inline-block;
   height: auto;
@@ -216,7 +221,7 @@ svg {
 } */
 
 .groupSVG {
-  fill: lightblue;
+  /* fill: lightblue; */
 }
 
 @media screen and (min-width: 576px) {

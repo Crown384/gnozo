@@ -1,13 +1,14 @@
 .groups {
-font-size: 0.9rem
+  font-size: 0.9rem
 }
 
-. groups svg {
-width: 12px;
-height: 12px;
+.groups svg {
+  width: 24px;
+  height: 24px;
 }
 
-.groupsOutput, .navArrows {
+.groupsOutput,
+.navArrows {
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 45% 45%;
@@ -16,10 +17,10 @@ height: 12px;
   cursor: pointer;
 }
 
-.first > *,
-.second > *,
-.third > *,
-.fourth > * {
+.first>*,
+.second>*,
+.third>*,
+.fourth>* {
   display: flex;
   flex-direction: column;
   /* margin: 0 auto; */
@@ -31,7 +32,8 @@ height: 12px;
   padding: 1em;
 }
 
-.first span, .second span {
+.first span,
+.second span {
   /* font-size: 1.2rem; */
   /* font-weight: 600; */
 }
@@ -52,7 +54,7 @@ height: 12px;
   cursor: pointer;
 }
 
-.groupsOutput > * {
+.groupsOutput>* {
   /* border: 2px solid grey; */
   /* height: auto; */
 }
@@ -65,7 +67,7 @@ height: 12px;
   cursor: pointer;
 }
 
-.searchGroups > * {
+.searchGroups>* {
   background-color: #1e1f21;
   padding: 1em;
 
