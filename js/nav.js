@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
       footer.querySelector('.about').classList.remove("active");
       // REAL ONE TO BE SHOWN
       search.classList.remove("hidden");
-      search.classList.add("active");
+     // search.classList.add("active");
       footer.querySelector('.search').classList.add("active");
 
       window.addEventListener("popstate", () => {
