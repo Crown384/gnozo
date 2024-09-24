@@ -8,10 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
       searchGroups.addEventListener('click', e => {
         const first = document.querySelector(".first");
         const second = document.querySelector(".second");
-        // second.innerHTML = ``;
-        // first.innerHTML = ``;
 
         if (e.target.classList.contains(containerId)) {
+          second.innerHTML = ``;
+          first.innerHTML = ``;
           filteredItems.forEach((resource, index) => {
             // let targetDiv;
             if (index % 2 === 0) {

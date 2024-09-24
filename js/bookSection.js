@@ -37,7 +37,7 @@ function createSections() {
         <p class="hidden">${section.title}</p>
       </div>
     </div>
-    <section class="test" id="${section.title}"></section>
+    <section class="resourcesContain" id="${section.title}"></section>
       `;
 
     const sectionElement = document.createElement("section");
