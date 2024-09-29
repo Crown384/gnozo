@@ -83,8 +83,73 @@ document.addEventListener("DOMContentLoaded", function () {
                 <small>${specificResource.semester}</small> • 
                 <small>${specificResource.fileSize}</small>
               </div>
+
+              <span class="container mt-4" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+              <h4 style="align-self: start; text-align: left;">Preview <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                  <path
+                    d="M480.18-353.85q60.97 0 103.47-42.68t42.5-103.65q0-60.97-42.68-103.47t-103.65-42.5q-60.97 0-103.47 42.68t-42.5 103.65q0 60.97 42.68 103.47t103.65 42.5ZM480-392q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm.11 152q-129.96 0-236.88-70.73Q136.31-381.46 83.08-500q53.23-118.54 160.04-189.27T479.89-760q129.96 0 236.88 70.73Q823.69-618.54 876.92-500q-53.23 118.54-160.04 189.27T480.11-240ZM480-500Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z" />
+                </svg>
+              </h4>
+                <iframe style="margin: 0 auto;"
+                  src="${specificResource.downLink}"
+                  frameborder="0" width="100%" height="70vh"></iframe>
+              </span>
             </div>
             `;
+
+            output.addEventListener('click', (e) => {
+              if (e.target.classList.contains('addSVG')) {
+                const resourceTitle = e.target.parentElement.parentElement.parentElement.querySelector('.resourceTitle')
+                if (favorite.length === 0) {
+                  favorite.push(resourceTitle.innerText);
+                } else {
+                  const arrayItem = JSON.parse(localStorage.getItem('favorite')).find(item => item === resourceTitle.innerText)
+
+                  if (!(resourceTitle.textContent === arrayItem)) {
+                    e.target.classList.add('hidden');
+                    e.target.nextElementSibling.classList.remove('hidden');
+                    // console.log('addsvg')
+
+                    favorite.push(resourceTitle.innerText);
+                    localStorage.setItem('favorite', JSON.stringify(favorite));
+                    console.log(favorite)
+
+                    favDiv.classList.remove('hidden');
+                    favTab.innerHTML = '';
+
+                    const one = document.createElement("div");
+                    const two = document.createElement("div");
+                    const three = document.createElement("div");
+                    one.className = "one";
+                    two.className = "two";
+                    // three.className = "three";
+
+                    JSON.parse(localStorage.getItem('favorite')).forEach((resource, index) => {
+                      let targetDiv = '';
+                      if (index % 3 === 0) {
+                        targetDiv = one;
+                      } else if (index % 3 === 1) {
+                        targetDiv = two;
+                      }
+                      //  else {
+                      //     targetDiv = three;
+                      // }
+
+                      // Append resource content
+                      targetDiv.innerHTML += `<span class="btn btn-outline-light Rbutton homeText">${resource}</span>`;
+                    });
+
+                    // Append the divs to the container
+                    favTab.appendChild(one);
+                    favTab.appendChild(two);
+                    // favTab.appendChild(three);
+
+                  } else if (e.target.classList.contains('removeSVG')) {
+
+                  }
+                }
+              }
+            });
             // CONSTs
             const arrowBack = document.querySelector("#arrowBack");
 

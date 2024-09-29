@@ -12,9 +12,17 @@ const resourceTitle = document.querySelector('.resourceTitle');
 output.addEventListener('click', (e) => {
     if (e.target.classList.contains('addSVG')) {
         let resourceTitle = e.target.parentElement.parentElement.parentElement.querySelector('.resourceTitle')
+console.log(resourceTitle)
 
-        JSON.parse(localStorage.getItem('favorite')).find(item => {
-            if (!resourceTitle.innerText === item) {
+        if (favorite.length === 0) {
+            favorite.push(resourceTitle.innerText);
+        } else {
+            const arrayItem = JSON.parse(localStorage.getItem('favorite')).find(item => {
+                if (resourceTitle.innerText === item) {
+                    return item;
+                }
+            })
+            if (!(resourceTitle.innerText === arrayItem)) {
                 e.target.classList.add('hidden');
                 e.target.nextElementSibling.classList.remove('hidden');
                 // console.log('addsvg')
@@ -53,10 +61,8 @@ output.addEventListener('click', (e) => {
                 favTab.appendChild(two);
                 // favTab.appendChild(three);
 
-            } else {
-                // alert('JESUS is LORD')
             }
-        })
+        }
 
     } else if (e.target.classList.contains('removeSVG')) {
 
