@@ -16,6 +16,7 @@
   <!-- FAV ICON HERE --- REMEBER -->
   <title>Gnozo: COT IKOLE</title>
   <link rel="stylesheet" href="css/_style.css" />
+<script src="https://cdnjs.com/libraries/pdf.js"></script>
 
   <style>
     .resourceTitle {
@@ -35,6 +36,7 @@
 </head>
 
 <body>
+<canvas id="pdf-render"></canvas>
   <div class="container">
     <div class="row">
       <div class="col-12 material-symbols-rounded">west</div>
@@ -84,6 +86,38 @@
       <form action="post">FORM HEREx</form>
     </section> -->
   </div>
+
+<script>
+  const url = 'https://archive.org/download/your-pdf-file.pdf';  // Replace with your archive.org link
+
+  // Asynchronously load the PDF
+  pdfjsLib.getDocument(url).promise.then(function(pdf) {
+    console.log('PDF loaded');
+
+    // Fetch the first page
+    pdf.getPage(1).then(function(page) {
+      console.log('Page loaded');
+
+      var scale = 1.5;  // Scale of the page
+      var viewport = page.getViewport({ scale: scale });
+
+      // Prepare canvas using PDF page dimensions
+      var canvas = document.getElementById('pdf-render');
+      var context = canvas.getContext('2d');
+      canvas.height = viewport.height;
+      canvas.width = viewport.width;
+
+      // Render PDF page into canvas context
+      var renderContext = {
+        canvasContext: context,
+        viewport: viewport
+      };
+      page.render(renderContext).promise.then(function() {
+        console.log('Page rendered');
+      });
+    });
+  });
+</script>
 </body>
 
 </html>
