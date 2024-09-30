@@ -1,39 +1,50 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>PDF in HTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.5.141/pdf.min.js"></script>
 </head>
-<style>
-    .pdf {
-        width: 100%;
-        aspect-ratio: 4 / 3;
-    }
-
-    .pdf,
-    html,
-    body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-   h1,
-    h3 {
-        text-align: center;
-    }
-
-    h1 {
-        color: green;
-    }
-</style>
-
 <body>
-        <h1>GeeksforGeeks</h1>
-        <h3>Embedding the PDF file Using embed Tag</h3>
-        <embed class="pdf" 
-               src=
-"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf"
-            width="800" height="500">
-</body>
+    <canvas id="pdf-render"></canvas>
 
+    <script>
+        // Archive.org PDF URL
+        const url = '';  // Replace with your archive.org PDF link
+
+        // Load PDF.js and fetch the PDF
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.5.141/pdf.worker.min.js';
+
+        // Asynchronously load the PDF using CORS
+        pdfjsLib.getDocument({ url }).promise.then(function(pdf) {
+            console.log('PDF loaded');
+
+            // Fetch the first page
+            pdf.getPage(1).then(function(page) {
+                console.log('Page loaded');
+
+                var scale = 1.5;  // Scale the page
+                var viewport = page.getViewport({ scale: scale });
+
+                // Prepare canvas using PDF page dimensions
+                var canvas = document.getElementById('pdf-render');
+                var context = canvas.getContext('2d');
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+                // Render PDF page into canvas context
+                var renderContext = {
+                    canvasContext: context,
+                    viewport: viewport
+                };
+                page.render(renderContext).promise.then(function() {
+                    console.log('Page rendered');
+                });
+            });
+        }).catch(function(error) {
+            console.error('Error loading PDF: ', error);
+        });
+    </script>
+</body>
 </html>
