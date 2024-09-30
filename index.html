@@ -94,11 +94,12 @@
 
 <body>
   <script>
-    if (!(localStorage.getItem('favorite'))) {
+    if (localStorage.getItem('favorite')) {
+      console.log(favorite);
+favorite = JSON.parse(localStorage.getItem('favorite'));
+    } else {
       const favorite = [];
       console.log(favorite);
-    } else {
-      favorite = JSON.parse(localStorage.getItem('favorite'));
     }
     // localStorage.setItem('favorite', JSON.stringify(favorite));
     // const favoriteArray = JSON.parse(localStorage.getItem('favorite'));
