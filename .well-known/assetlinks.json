@@ -2,7 +2,7 @@
       "relation": ["delegate_permission/common.handle_all_urls"],
       "target": {
         "namespace": "android_app",
-        "package_name": "com.gnozo.cotikole.twa",
-        "sha256_cert_fingerprints": ["94:BF:21:CA:DB:5E:ED:59:82:4B:F2:32:D9:8F:35:79:E0:1F:BC:BE:29:8B:94:2B:96:D9:58:36:3C:A0:4B:45"]
+        "package_name": "app.netlify.gnozo.twa",
+        "sha256_cert_fingerprints": ["3A:3D:1A:A7:AB:81:7C:73:68:C8:20:CB:50:9C:EC:40:FA:75:82:10:78:9C:62:8F:48:C7:E4:09:7A:67:7F:40"]
       }
     }]
