@@ -99,13 +99,10 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
             `;
 
-            const addSVG = document.querySelector('.addSVG');
-            const removeSVG = document.querySelector('.removeSVG');
+            // const addSVG = document.querySelector('.addSVG');
+            // const removeSVG = document.querySelector('.removeSVG');
 
-            const resourceTitle = document.querySelector('.resourceTitle');
-
-            e.target.classList.add('hidden');
-            e.target.nextElementSibling.classList.remove('hidden');
+            // const resourceTitle = document.querySelector('.resourceTitle');
 
             const arrowBack = document.querySelector("#arrowBack");
 
