@@ -86,6 +86,7 @@ main.addEventListener("click", (e) => {
               <div class="col-12 smalls mt-3">
                 <small>${specifyMaterial.courseCode}</small> • 
                 <small>${specifyMaterial.semester}</small> • 
+                <small>${specifyMaterial.fileType}</small> • 
                 <small>${specifyMaterial.fileSize}</small>
               </div>
 

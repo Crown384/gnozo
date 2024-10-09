@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
               <div class="row mt-3">
                 <div id="arrowBack" class="col-12 material-symbols-rounded">west</div>
                 <div class="col-12 mt-4">
-                  <span class="mt-4 h4 resourceTitle text-break">${specificResource.title}</span>
+                  <span class="mt-4 h4 resourceTitle specificTitle text-break">${specificResource.title}</span>
                 </div>
               </div>
 
@@ -81,6 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
               <div class="col-12 smalls mt-3">
                 <small>${specificResource.courseCode}</small> • 
                 <small>${specificResource.semester}</small> • 
+                <small>${specificResource.fileType}</small> • 
                 <small>${specificResource.fileSize}</small>
               </div>
 
@@ -98,60 +99,14 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
             `;
 
-            output.addEventListener('click', (e) => {
-              if (e.target.classList.contains('addSVG')) {
-                const resourceTitle = e.target.parentElement.parentElement.parentElement.querySelector('.resourceTitle')
-                if (favorite.length === 0) {
-                  favorite.push(resourceTitle.innerText);
-                } else {
-                  const arrayItem = JSON.parse(localStorage.getItem('favorite')).find(item => item === resourceTitle.innerText)
+            const addSVG = document.querySelector('.addSVG');
+            const removeSVG = document.querySelector('.removeSVG');
 
-                  if (!(resourceTitle.textContent === arrayItem)) {
-                    e.target.classList.add('hidden');
-                    e.target.nextElementSibling.classList.remove('hidden');
-                    // console.log('addsvg')
+            const resourceTitle = document.querySelector('.resourceTitle');
 
-                    favorite.push(resourceTitle.innerText);
-                    localStorage.setItem('favorite', JSON.stringify(favorite));
-                    console.log(favorite)
+            e.target.classList.add('hidden');
+            e.target.nextElementSibling.classList.remove('hidden');
 
-                    favDiv.classList.remove('hidden');
-                    favTab.innerHTML = '';
-
-                    const one = document.createElement("div");
-                    const two = document.createElement("div");
-                    const three = document.createElement("div");
-                    one.className = "one";
-                    two.className = "two";
-                    // three.className = "three";
-
-                    JSON.parse(localStorage.getItem('favorite')).forEach((resource, index) => {
-                      let targetDiv = '';
-                      if (index % 3 === 0) {
-                        targetDiv = one;
-                      } else if (index % 3 === 1) {
-                        targetDiv = two;
-                      }
-                      //  else {
-                      //     targetDiv = three;
-                      // }
-
-                      // Append resource content
-                      targetDiv.innerHTML += `<span class="btn btn-outline-light Rbutton homeText">${resource}</span>`;
-                    });
-
-                    // Append the divs to the container
-                    favTab.appendChild(one);
-                    favTab.appendChild(two);
-                    // favTab.appendChild(three);
-
-                  } else if (e.target.classList.contains('removeSVG')) {
-
-                  }
-                }
-              }
-            });
-            // CONSTs
             const arrowBack = document.querySelector("#arrowBack");
 
             output.classList.remove("hidden");

@@ -84,6 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
               <div class="col-12 smalls mt-3">
                 <small>${specifyMaterial.courseCode}</small> • 
                 <small>${specifyMaterial.semester}</small> • 
+                <small>${specifyMaterial.fileType}</small> • 
                 <small>${specifyMaterial.fileSize}</small>
               </div>
 
@@ -117,7 +118,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
               window.addEventListener("popstate", () => {
                 output.classList.add("hidden");
-                main.classList.remove("hidden");
+                main.classList.add("hidden");
+                search.classList.remove('hidden');
 
                 sectionsNav.forEach((section) => {
                   section.classList.add("hidden");

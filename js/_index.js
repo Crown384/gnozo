@@ -21,14 +21,14 @@ const engineeringBooks = [
     {
         title: "CHM 101 Aromatic Nomenclature Practice Problems",
         fileSize: "24.0KB",
-        fileType: "doc",
+        fileType: "docx",
         keywords: [
             "chm", "101", "chm101", "chm 101", "aromatic", "nomenclature",
             "practice", "problems", "organic", "chemistry", "naming", "compounds"
         ],
         courseCode: "CHM 101",
         semester: "1st semester",
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./CHM%20101%20Aromatic%20Nomenclature%20Practice%20Problems..doc"
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./CHM%20101%20Aromatic%20Nomenclature%20Practice%20Problems..docx"
     },
     {
         title: "CHM 101 Chemical Equilibrium",
@@ -121,14 +121,14 @@ const engineeringBooks = [
     {
         title: "C 101 Reading 2",
         fileSize: "26.9KB",
-        fileType: "docx",
+        fileType: "docxx",
         keywords: [
             "c", "101", "c101", "c 101", "reading", "2", "read", "study",
             "skills", "practice", "learning"
         ],
         courseCode: "C 101",
         semester: "1st semester",
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./C%20101%20Reading%202..docx"
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./C%20101%20Reading%202..docxx"
     },
     {
         title: "GST 101 Reading 2",
@@ -231,7 +231,7 @@ const engineeringBooks = [
         fileSize: "631.3KB",
         fileType: "pdf",
         keywords: [
-            "gst", "101", "gst101", "gst 101", "document", "study",
+            "gst", "101", "gst101", "gst 101", "docxument", "study",
             "skills", "communication", "reading", "learning"
         ],
         courseCode: "GST 101",
@@ -250,11 +250,11 @@ const engineeringBooks = [
     {
         title: "CHM 101 Aromatic Nomenclature Practice Problems",
         fileSize: "24.0KB",
-        fileType: "doc",
+        fileType: "docx",
         keywords: ['chm', '101', 'chm101', 'chm 101', 'aromatic', 'nomenclature', 'practice', 'problems', 'naming', 'chemistry'],
         courseCode: 'CHM 101',
         semester: '1st semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./CHM%20101%20Aromatic%20Nomenclature%20Practice%20Problems..doc"
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./CHM%20101%20Aromatic%20Nomenclature%20Practice%20Problems..docx"
     },
     {
         title: "CHM 101 Chemical Equilibrium",
@@ -439,11 +439,11 @@ const engineeringBooks = [
     {
         title: "CHM 101 Aromatic Nomenclature Practice Problems",
         fileSize: "24.0KB",
-        fileType: "doc",
+        fileType: "docx",
         keywords: ['chm', '101', 'chm 101', 'aromatic', 'nomenclature', 'practice', 'problems'],
         courseCode: 'CHM 101',
         semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./CHM%20101%20Aromatic%20Nomenclature%20Practice%20Problems..doc"
+        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./CHM%20101%20Aromatic%20Nomenclature%20Practice%20Problems..docx"
     },
     {
         title: "CHM 101 Chemical Equilibrium",
