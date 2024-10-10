@@ -7,21 +7,25 @@
 // AD SVG HERE
 output.addEventListener('click', (e) => {
     if (e.target.classList.contains('addSVG')) {
-        let resourceTitle = e.target.parentElement.parentElement.parentElement.querySelector('.resourceTitle')
+        let resourceTitle = e.target.parentElement.parentElement.parentElement.querySelector('.resourceTitle');
+        // confirm(`Do you want to add ${resourceTitle} to favorite ?`);
         console.log(resourceTitle);
         console.log(JSON.parse(localStorage.getItem('favorite')));
+
+        e.target.classList.add('hidden');
+        e.target.nextElementSibling.classList.remove('hidden');
 
         const arrayItem = JSON.parse(localStorage.getItem('favorite')).find(item => {
             if (resourceTitle.innerText === item) {
                 return item;
             }
         })
+
         if (resourceTitle.innerText === arrayItem) {
             console.log('hi');
-        }
-        else {
+        } else {
             const favorite = JSON.parse(localStorage.getItem('favorite'));
-            // console.log('addsvg')
+            // console.log('addsvg');
 
             favorite.push(resourceTitle.innerText);
             localStorage.setItem('favorite', JSON.stringify(favorite));
@@ -59,7 +63,23 @@ output.addEventListener('click', (e) => {
         }
 
     } else if (e.target.classList.contains('removeSVG')) {
+        let resourceTitle = e.target.parentElement.parentElement.parentElement.querySelector('.resourceTitle');
+        console.log(resourceTitle.textContent);
+        const arrayResource = JSON.parse(localStorage.getItem('favorite'));
 
+        const arrayItem = JSON.parse(localStorage.getItem('favorite')).find(item => {
+            if (resourceTitle.innerText === item) {
+                return item;
+            }
+        })
+        const indexofResource = arrayResource.indexOf(arrayItem);
+        console.log(indexofResource);
+
+        favorite = arrayResource.splice(indexofResource, 1);
+
+        console.log(favorite);
+
+        localStorage.setItem('favorite', JSON.stringify(favorite));
     }
 });
 // addSVG.addEventListener('click', () => {
