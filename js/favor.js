@@ -5,133 +5,93 @@
 // }
 
 // AD SVG HERE
-output.addEventListener('click', (e) => {
-    if (e.target.classList.contains('addSVG')) {
-        let resourceTitle = e.target.parentElement.parentElement.parentElement.querySelector('.resourceTitle');
-        // confirm(`Do you want to add ${resourceTitle} to favorite ?`);
-        console.log(resourceTitle);
-        console.log(JSON.parse(localStorage.getItem('favorite')));
-
-        e.target.classList.add('hidden');
-        e.target.nextElementSibling.classList.remove('hidden');
-
-        const arrayItem = JSON.parse(localStorage.getItem('favorite')).find(item => {
-            if (resourceTitle.innerText === item) {
-                return item;
-            }
-        })
-
-        if (resourceTitle.innerText === arrayItem) {
-            console.log('hi');
-        } else {
-            const favorite = JSON.parse(localStorage.getItem('favorite'));
-            // console.log('addsvg');
-
-            favorite.push(resourceTitle.innerText);
-            localStorage.setItem('favorite', JSON.stringify(favorite));
-            console.log(favorite);
-
-            // favTabF();
-            favDiv.classList.remove('hidden');
-            favTab.innerHTML = '';
-
-            const one = document.createElement("div");
-            const two = document.createElement("div");
-            const three = document.createElement("div");
-            one.className = "one";
-            two.className = "two";
-            three.className = "three";
-
-            JSON.parse(localStorage.getItem('favorite')).forEach((resource, index) => {
-                let targetDiv = '';
-                if (index % 3 === 0) {
-                    targetDiv = one;
-                } else if (index % 3 === 1) {
-                    targetDiv = two;
-                } else {
-                    targetDiv = three;
-                }
-
-                // Append resource content
-                targetDiv.innerHTML += `<span class="btn btn-outline-light Rbutton homeText">${resource}</span>`;
-            });
-
-            // Append the divs to the container
-            favTab.appendChild(one);
-            favTab.appendChild(two);
-            favTab.appendChild(three);
-        }
-
-    } else if (e.target.classList.contains('removeSVG')) {
-        let resourceTitle = e.target.parentElement.parentElement.parentElement.querySelector('.resourceTitle');
-        console.log(resourceTitle.textContent);
-        const arrayResource = JSON.parse(localStorage.getItem('favorite'));
-
-        const arrayItem = JSON.parse(localStorage.getItem('favorite')).find(item => {
-            if (resourceTitle.innerText === item) {
-                return item;
-            }
-        })
-        const indexofResource = arrayResource.indexOf(arrayItem);
-        console.log(indexofResource);
-
-        favorite = arrayResource.splice(indexofResource, 1);
-
-        console.log(favorite);
-
-        localStorage.setItem('favorite', JSON.stringify(favorite));
-    }
-});
-// addSVG.addEventListener('click', () => {
-//     addSVG.classList.add('hidden');
-//     removeSVG.classList.remove('hidden');
-
-//     // addSVG.parentElement.parentElement.parentElement.querySelector('.resourceTitle')
-//     favorite.push(resourceTitle.innerText);
-//     console.log(favorite);
-//     localStorage.setItem('favorite', favorite);
-//     console.log(localStorage.getItem('favorite'));
-
-//     favDiv.classList.remove('hidden');
-//     // notification code here
-// });
-
-// removeSVG.addEventListener('click', () => {
-//     removeSVG.classList.add('hidden');
-//     addSVG.classList.remove('hidden');
-
-//     favoriteArray.splice(index, 1);
-
-//     // Hide favDiv
-
-//     if (favoriteArray.length === 0) {
-//         favDiv.classList.add('hidden');
+// document.addEventListener('DOMContentLoaded', () => {
+//     // Ensure localStorage favorite array exists
+//     if (!localStorage.getItem('favorite')) {
+//         localStorage.setItem('favorite', JSON.stringify([]));
 //     }
 // });
 
-// // listen for storage event. if it chnages add evenlistner to use button.
-// window.addEventListener('storage', () => {
-//     favDiv.innerHTML = "";
+output.addEventListener('click', (e) => {
+    if (e.target.classList.contains('addSVG')) {
+        let resourceTitle = e.target.parentElement.parentElement.parentElement.querySelector('.resourceTitle');
 
-//     // Create elements to hold the resources
-//     const one = document.createElement("div");
-//     const two = document.createElement("div");
-//     one.className = "one";
-//     two.className = "two";
+        if (resourceTitle) {
+            e.target.classList.add('hidden');
+            e.target.nextElementSibling.classList.remove('hidden');
 
-//     favoriteArray.forEach((resource, index) => {
-//         let targetDiv;
-//         if (index % 3 === 0) {
-//             targetDiv = one;
-//         } else if (index % 3 === 1) {
-//             targetDiv = two;
-//         }
+            let favorite = JSON.parse(localStorage.getItem('favorite')) || [];
+            const arrayItem = favorite.find(item => resourceTitle.innerText === item);
 
-//         // Append resource content
-//         targetDiv.innerHTML += `<span class="btn btn-outline-light Rbutton homeText">${resource.title}</span>`;
-//     });
+            if (!arrayItem) {
+                favorite.push(resourceTitle.innerText);
+                localStorage.setItem('favorite', JSON.stringify(favorite));
 
-//     // Append the divs to the container
-//     favDiv.appendChild(one);
-//     favDiv.appendChild(two);
-// });
+                favDiv.classList.remove('hidden');
+                favTab.innerHTML = '';
+
+                // Create the div containers
+                const one = document.createElement("div");
+                const two = document.createElement("div");
+                const three = document.createElement("div");
+                one.className = "one";
+                two.className = "two";
+                three.className = "three";
+
+                favorite.forEach((resource, index) => {
+                    let targetDiv = index % 3 === 0 ? one : (index % 3 === 1 ? two : three);
+                    targetDiv.innerHTML += `<span class="btn btn-outline-light Rbutton homeText">${resource}</span>`;
+                });
+
+                favTab.appendChild(one);
+                favTab.appendChild(two);
+                favTab.appendChild(three);
+            }
+        }
+    } else if (e.target.classList.contains('removeSVG')) {
+        let resourceTitle = e.target.parentElement.parentElement.parentElement.querySelector('.resourceTitle');
+        if (resourceTitle) {
+            e.target.classList.add('hidden');
+            e.target.previousElementSibling.classList.remove('hidden');
+
+            let favorite = JSON.parse(localStorage.getItem('favorite')) || [];
+            const arrayItem = favorite.find(item => resourceTitle.innerText === item);
+            const indexofResource = favorite.indexOf(arrayItem);
+
+            if (indexofResource !== -1) {
+                // Remove item from favorite array
+                favorite.splice(indexofResource, 1);
+                localStorage.setItem('favorite', JSON.stringify(favorite));
+
+                // Check if favorite array is empty after removal
+                if (favorite.length === 0) {
+                    document.querySelector('.fav').classList.add('hidden');  // Hides the div
+                    console.log('Favorites empty, hiding favDiv');
+                }
+
+                favTab.innerHTML = ''; // Clear tab
+
+                // Rebuild the favorite list if there are still items
+                if (favorite.length > 0) {
+                    const one = document.createElement("div");
+                    const two = document.createElement("div");
+                    const three = document.createElement("div");
+                    one.className = "one";
+                    two.className = "two";
+                    three.className = "three";
+
+                    favorite.forEach((resource, index) => {
+                        let targetDiv = index % 3 === 0 ? one : (index % 3 === 1 ? two : three);
+                        targetDiv.innerHTML += `<span class="btn btn-outline-light Rbutton homeText">${resource}</span>`;
+                    });
+
+                    favTab.appendChild(one);
+                    favTab.appendChild(two);
+                    favTab.appendChild(three);
+                }
+            }
+        }
+    }
+});
+
+
