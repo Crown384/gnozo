@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropbox Example</title>
+    <script src="https://unpkg.com/dropbox/dist/Dropbox-sdk.min.js"></script>
+</head>
+<body>
+
+<script>
+    // Initialize Dropbox with your Access Token
+    var dbx = new Dropbox.Dropbox({ accessToken: 'sl.B-krhH1aqVxaU67cISvitpacS8XGjtUlKVz7hZfwqKt3dMQIqGz3wfcfOn3eT1EEDFHaFyILj_kOoxrB8FOiJZxrLXPzkwdk0gxY6y38b-oXFOH4Oh1l7U8YwgQXRgwVMJubR0rw6kTj' });
+
+    // Folder path in Dropbox where files are stored
+    const folderPath = '/GNOZO/ENGINEERING/100_LEVEL/FIRST_SEMESTER';
+
+    // Function to create shared links for all files in a folder
+    async function createSharedLinksForFolder() {
+        try {
+            // List files in the specified folder
+            const filesList = await dbx.filesListFolder({ path: folderPath });
+            const files = filesList.entries.filter(entry => entry['.tag'] === 'file'); // Filter for only files
+
+            // Loop through each file and create shared links
+            for (let file of files) {
+                const linkResponse = await dbx.sharingCreateSharedLinkWithSettings({
+                    path: file.path_lower
+                });
+
+                console.log(`File: ${file.name}, Link: ${linkResponse.url}`);
+            }
+
+        } catch (error) {
+            console.error('Error creating shared links: ', error);
+        }
+    }
+
+    // Run the function
+    createSharedLinksForFolder();
+
+</script>
+
+</body>
+</html>

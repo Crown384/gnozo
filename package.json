@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "dropbox": "^10.34.0",
     "workbox-precaching": "^7.1.0"
   },
   "name": "gnozo",
@@ -11,5 +12,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Stephen Tioluwani Alademomi",
-  "license": "ISC"
+  "license": "ISC",
+  "type": "module"
 }
