@@ -65,7 +65,7 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         ],
         courseCode: "GST 103",
         semester: "1st semester",
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20103%20All%20Together%20ICT.%20%281%29.pdf"
+        downLink: "https://www.dropbox.com/scl/fi/nri87372p53pv2dpcug7k/GST-103-All-Together-ICT..pdf?rlkey=z2zz23973zmyr6lyp3x69gy43&st=p7zjyhrk&dl=1"
     },
     {
         title: "CHM 101 Reaction Order, Rate Constant, and Experimental Determination",
