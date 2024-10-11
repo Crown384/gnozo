@@ -362,67 +362,22 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         downLink: "https://www.dropbox.com/scl/fi/h30aaeb47d9n5r0b86m1l/Phy-101-Motion-in-one-dimension..pdf?rlkey=eooe0if5fqbkhnxdhop3dqcv0&st=bti5lidc&dl=1"
     },
     {
-        title: "CHM 101 1st and 2nd order reaction",
-        fileSize: "20.4KB",
-        fileType: "pdf",
-        keywords: ['chm', '101', 'chm 101', '1st', '2nd', 'order', 'reaction'],
-        courseCode: 'CHM 101',
-        semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./CHM%20101%202nd%20and%202nd%20order%20reaction..pdf"
-    },
-    {
-        title: "CHM 101 Aromatic Nomenclature Practice Problems",
-        fileSize: "24.0KB",
-        fileType: "docx",
-        keywords: ['chm', '101', 'chm 101', 'aromatic', 'nomenclature', 'practice', 'problems'],
-        courseCode: 'CHM 101',
-        semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./CHM%20101%20Aromatic%20Nomenclature%20Practice%20Problems..docx"
-    },
-    {
-        title: "CHM 101 Chemical Equilibrium",
-        fileSize: "24.0KB",
-        fileType: "pdf",
-        keywords: ['chm', '101', 'chm 101', 'chemical', 'equilibrium'],
-        courseCode: 'CHM 101',
-        semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./CHM%20101%20Chemical%20Equilibrium..pdf"
-    },
-    {
-        title: "GST 101 Communication Listening Skills Reading Skills",
-        fileSize: "385.0KB",
-        fileType: "pdf",
-        keywords: ['gst', '101', 'gst 101', 'communication', 'listening', 'skills', 'reading'],
-        courseCode: 'GST 101',
-        semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20101%20Communication%20Listening%20Skills%20Reading%20Skills.%20%281%29.pdf"
-    },
-    {
-        title: "GST 103 All Together ICT",
-        fileSize: "24.0KB",
-        fileType: "pdf",
-        keywords: ['gst', '103', 'gst 103', 'all', 'together', 'ict'],
-        courseCode: 'GST 103',
-        semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20103%20All%20Together%20ICT.%20%281%29.pdf"
-    },
-    {
         title: "GST 102 English",
         fileSize: "16.6MB",
         fileType: "pdf",
         keywords: ['gst', '102', 'gst 102', 'english'],
         courseCode: 'GST 102',
         semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20102%20English.pdf"
+        downLink: "https://www.dropbox.com/scl/fi/9z5pob6ao3ng4gzt871c6/GST-102-English.pdf?rlkey=h0eofn8xua1clatth6kl1npdc&st=czmf9osr&dl=1"
     },
     {
         title: "GST 102 MCQ by B.sc",
         fileSize: "133.6KB",
         fileType: "pdf",
-        keywords: ['gst', '102', 'gst 102', 'mcq'],
+        keywords: ['gst', '102', 'gst 102', 'mcq','que'],
         courseCode: 'GST 102',
         semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20102%20MCQ%20by%20B.sc.pdf"
+        downLink: "https://www.dropbox.com/scl/fi/wurs9pav4no9g8cegbnys/GST-102-MCQ-by-B.sc.pdf?rlkey=b1u7ipv09eouqgxta5pl68kkj&st=7zeonwhv&dl=1"
     },
     {
         title: "GST 102 Part Of Speech",
@@ -431,7 +386,7 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         keywords: ['gst', '102', 'gst 102', 'part', 'of', 'speech'],
         courseCode: 'GST 102',
         semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20102%20Part%20Of%20Speech.pdf"
+        downLink: "https://www.dropbox.com/scl/fi/545p67skucpxplj9xrkc6/GST-102_Part-Of-Speech.pptx?rlkey=ijevd0unxg2itqlva1agm81cq&st=7xyq7zgo&dl=1"
     },
     {
         title: "GST 108 Handout",
@@ -440,7 +395,7 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         keywords: ['gst', '108', 'gst 108', 'handout'],
         courseCode: 'GST 108',
         semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20108%20Handout..pdf"
+        downLink: "https://www.dropbox.com/scl/fi/rkf7tb9ly76zesfpsinfb/GST-108-Handout..pdf?rlkey=v9dhpc422yfvbolrag898k4rp&st=jr0n4p04&dl=1"
     },
     {
         title: "GST 110 Week 1",
@@ -449,7 +404,7 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         keywords: ['gst', '110', 'gst 110', 'week', '1'],
         courseCode: 'GST 110',
         semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20110%20Week%201.pdf"
+        downLink: "https://www.dropbox.com/scl/fi/wuunkcwayrnbr6g7iitpy/GST-110-Week-1.pdf?rlkey=ho0jmub1n9ebs75jmdu9nzrd9&st=kdikcguu&dl=1"
     },
     {
         title: "GST 110 Week 2",
@@ -458,7 +413,7 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         keywords: ['gst', '110', 'gst 110', 'week', '2'],
         courseCode: 'GST 110',
         semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20110%20Week%202.pdf"
+        downLink: "https://www.dropbox.com/scl/fi/r5tqi9v7xk6hoepkp03cf/GST-110-Week-2.pdf?rlkey=wj1jugc12tdde4dgfp8wu96lf&st=vkfkyg67&dl=1"
     },
     {
         title: "GST 110 Week 3",
@@ -467,7 +422,7 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         keywords: ['gst', '110', 'gst 110', 'week', '3'],
         courseCode: 'GST 110',
         semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20110%20Week%203.pdf"
+        downLink: "https://www.dropbox.com/scl/fi/tndnato2g36cibrcxel6e/GST-110-Week-3.pdf?rlkey=461vud2talcslm03evyxpbpsm&st=rbcp6px1&dl=1"
     },
     {
         title: "GST 110 Week 4",
@@ -476,7 +431,7 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         keywords: ['gst', '110', 'gst 110', 'week', '4'],
         courseCode: 'GST 110',
         semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20110%20Week%204.pdf"
+        downLink: "https://www.dropbox.com/scl/fi/1n79wgkjio9utscuuik04/GST-110-Week-4.pdf?rlkey=p2wq0gurgszwrpj02blqvrlbu&st=dj7eqr69&dl=1"
     },
     {
         title: "GST 110 Week 5",
@@ -485,7 +440,7 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         keywords: ['gst', '110', 'gst 110', 'week', '5'],
         courseCode: 'GST 110',
         semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20110%20Week%205.pdf"
+        downLink: "https://www.dropbox.com/scl/fi/cdwqiuhyf1tkx9q2kbvrt/GST-110-Week-5.pdf?rlkey=jrp91bi5y40ayd6659dcp9b2w&st=k6cvuw1f&dl=1"
     },
     {
         title: "GST 110 Week 6",
@@ -494,7 +449,7 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         keywords: ['gst', '110', 'gst 110', 'week', '6'],
         courseCode: 'GST 110',
         semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20110%20Week%206.pdf"
+        downLink: "https://www.dropbox.com/scl/fi/qnrpsw1istce4ggy8ws0t/GST-110-Week-6.pdf?rlkey=c1k68bht85k77ru3tncp1y7s3&st=neicp5vp&dl=1"
     },
     {
         title: "GST 110 Week 7",
@@ -503,16 +458,16 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         keywords: ['gst', '110', 'gst 110', 'week', '7'],
         courseCode: 'GST 110',
         semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20110%20Week%207.pdf"
+        downLink: "https://www.dropbox.com/scl/fi/mw6l18k024kcs2fvz82dz/GST-110-Week-7.pdf?rlkey=mfaritftdsp5ucjads9by2x9o&st=6a23r14r&dl=1"
     },
     {
         title: "Mth 102 Ass Solution by B.sc",
         fileSize: "1.6MB",
         fileType: "pdf",
-        keywords: ['mth', '102', 'mth 102', 'ass', 'solution'],
+        keywords: ['mth', '102', 'mth 102', 'ass', 'solution','que'],
         courseCode: 'Mth 102',
         semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./Mth%20102%20Ass%20Solution%20by%20B.sc.pdf"
+        downLink: "https://www.dropbox.com/scl/fi/w2yz0gcf7xnodvzgme71v/Mth-102-Ass-Solution-by-B.sc.pdf?rlkey=cjpvombkp79eb4jxaj4i6m946&st=28b34uwc&dl=1"
     },
     {
         title: "PHY Atomic structure",
@@ -521,7 +476,7 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         keywords: ['phy', 'atomic', 'structure'],
         courseCode: 'PHY',
         semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20Atomic%20structure..pdf"
+        downLink: "https://www.dropbox.com/scl/fi/1g0kmznad43wj6a2hbe91/PHY-Atomic-structure..pdf?rlkey=dsquxeqat2827i5koqnl2rvft&st=qskoecwz&dl=1"
     },
     {
         title: "PHY Electricity",
@@ -530,16 +485,16 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         keywords: ['phy', 'electricity'],
         courseCode: 'PHY',
         semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20Electricity..pdf"
+        downLink: "https://www.dropbox.com/scl/fi/zcj2nfbnrqniuxvruy6y6/PHY-Electricity..pdf?rlkey=3f80xtlcrfwat13f52p23u8xp&st=70jv6lkx&dl=1"
     },
     {
         title: "PHY Surface Tension",
         fileSize: "83.7KB",
-        fileType: "pdf",
+        fileType: "docx",
         keywords: ['phy', 'surface', 'tension'],
         courseCode: 'PHY',
         semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20Surface%20Tension..pdf"
+        downLink: "https://www.dropbox.com/scl/fi/hq04rn399mwvw265q44id/PHY-Surface-Tension..doc?rlkey=yu78nc6m1mms8pec8zm9a3zuy&st=4dac5lnt&dl=1"
     },
     {
         title: "PHY 102 Coulomb's Law",
@@ -548,16 +503,16 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         keywords: ['phy', '102', 'coulomb', 'law'],
         courseCode: 'PHY 102',
         semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20102%20Coulomb's%20Law..pdf"
+        downLink: "https://www.dropbox.com/scl/fi/oc3343d2u83d936roz35x/PHY-102-Coulomb-s-Law..pdf?rlkey=rh26do11w0lyxoco1ya9ikoju&st=jifc2u8b&dl=1"
     },
     {
         title: "PHY 102 Electric Field",
         fileSize: "375.3KB",
-        fileType: "pdf",
+        fileType: "pptx",
         keywords: ['phy', '102', 'electric', 'field'],
         courseCode: 'PHY 102',
         semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20102%20Electric%20Field..pdf"
+        downLink: "https://www.dropbox.com/scl/fi/r65palua8asz7y0vw32y7/PHY-102-Electric-Field..pptx?rlkey=w1dinq9ucbuz9eon87ssytbid&st=fxl4897l&dl=1"
     },
     {
         title: "PHY 102 Electromagnetic induction",
@@ -566,7 +521,7 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         keywords: ['phy', '102', 'electromagnetic', 'induction'],
         courseCode: 'PHY 102',
         semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20102%20Electromagnetic%20induction..pdf"
+        downLink: "https://www.dropbox.com/scl/fi/tephv7di1ci97gwgedbvr/PHY-102-Electromagnetic-induction..pdf?rlkey=ircq6crs8wg4r0e9mdwdd2wkm&st=fymdruhx&dl=1"
     },
     {
         title: "PHY 102 Electrostatic Force",
@@ -575,7 +530,7 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         keywords: ['phy', '102', 'electrostatic', 'force'],
         courseCode: 'PHY 102',
         semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20102%20Electrostatic%20Force..pdf"
+        downLink: "https://www.dropbox.com/scl/fi/31braomv9es1opvo73gxe/PHY-102-Electrostatic-Force..pdf?rlkey=ck2i39d34ruclzdaptvvfh7f4&st=nu8vronb&dl=1"
     },
     {
         title: "PHY 102 Electrostatics 1",
@@ -584,7 +539,7 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         keywords: ['phy', '102', 'electrostatics', '1'],
         courseCode: 'PHY 102',
         semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20102%20Electrostatics%201..pdf"
+        downLink: "https://www.dropbox.com/scl/fi/jis6bk93legxazly2y64y/PHY-102-Electrostatics-1..pdf?rlkey=b6cdlzrauti8jfhdnptb1f67m&st=6rtkt2xq&dl=1"
     },
     {
         title: "PHY 102 Electrostatics 2",
@@ -593,7 +548,7 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         keywords: ['phy', '102', 'electrostatics', '2'],
         courseCode: 'PHY 102',
         semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20102%20Electrostatics%202..pdf"
+        downLink: "https://www.dropbox.com/scl/fi/xavuch7wavmls61mzx8ov/PHY-102-Electrostatics-2.-1.pdf?rlkey=6lr6x9xqk9gamdffnoztrqkg1&st=czeczz44&dl=1"
     },
     {
         title: "PHY 102 Gauss Law, Magnetism Current",
@@ -602,29 +557,7 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         keywords: ['phy', '102', 'gauss', 'law', 'magnetism', 'current'],
         courseCode: 'PHY 102',
         semester: '2nd semester',
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20102%20Gauss%20Law,%20Magnetism%20Current..pdf"
-    },
-    {
-        title: "PHY 102 Gauss Law, Magnetism Current. (1).pdf",
-        fileSize: "262.8KB",
-        fileType: "pdf",
-        keywords: [
-            "phy", "102", "gauss", "law", "magnetism", "current", "physics", "electricity", "magnetism", "gauss", "law", "physics102", "phy102", "phy 102"
-        ],
-        courseCode: "PHY 102",
-        semester: "2nd semester",
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20102%20Gauss%20Law,%20Magnetism%20Current.%20%281%29.pdf"
-    },
-    {
-        title: "PHY 102 Gauss Law, Magnetism Current..pdf",
-        fileSize: "262.8KB",
-        fileType: "pdf",
-        keywords: [
-            "phy", "102", "gauss", "law", "magnetism", "current", "physics", "electricity", "magnetism", "physics102", "phy102", "phy 102"
-        ],
-        courseCode: "PHY 102",
-        semester: "2nd semester",
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20102%20Gauss%20Law,%20Magnetism%20Current..pdf"
+        downLink: "https://www.dropbox.com/scl/fi/0w84bmcxvr5ii9ky9t4es/PHY-102-Gauss-Law-Magnetism-Current..pdf?rlkey=6nm8mgum9dufvdze92sjixmta&st=lfuqqoor&dl=1"
     },
     {
         title: "PHY 102 Self inductance, Mutual inductance, Transformers..pdf",
@@ -635,18 +568,17 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         ],
         courseCode: "PHY 102",
         semester: "2nd semester",
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20102%20Self%20inductance,%20Mutual%20inductance,%20Transformers..pdf"
+        downLink: "https://www.dropbox.com/scl/fi/4f0ltwg49oz7s8y7evlfv/PHY-102-Self-inductance-Mutual-inductance-Transformers..pdf?rlkey=kwiyldlr7risajixc8mrkb25m&st=5rupkyde&dl=1"
     },
     {
         title: "PHY 102 Tutorial QUE 2017'18..pdf",
         fileSize: "52.6KB",
         fileType: "pdf",
         keywords: [
-            "phy", "102", "tutorial", "que", "2017", "2018", "physics", "questions", "practice", "exam", "physics102", "phy102", "phy 102"
-        ],
+            "phy", "102", "tutorial", "que", "2017", "2018", "physics", "questions", "practice", "exam", "physics102", "phy102", "phy 102",'que'],
         courseCode: "PHY 102",
         semester: "2nd semester",
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY%20102%20Tutorial%20QUE%202017'18..pdf"
+        downLink: "https://www.dropbox.com/scl/fi/a98118iove4z3zirio7gx/PHY-102-Tutorial-QUE-2017-18..pdf?rlkey=tbqt98k3gwotoyveuih3qah7l&st=kaezl6mv&dl=1"
     },
     {
         title: "PHY_102_Conductors,_Currents,_Resistors,_Resistance_and_power_.pdf",
@@ -657,17 +589,16 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         ],
         courseCode: "PHY 102",
         semester: "2nd semester",
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./PHY_102_Conductors,_Currents,_Resistors,_Resistance_and_power_.pdf"
+        downLink: "https://www.dropbox.com/scl/fi/wde0hye4e7611y48eznsf/PHY_102_Conductors-_Currents-_Resistors-_Resistance_and_power_.pdf?rlkey=6rnzritd6uycwti98fch04jr2&st=cimwyuft&dl=1"
     },
     {
         title: "Phrof_Malomo's_Students_Copy_CHM_102_Tutorial_Questions_Populated.pdf",
         fileSize: "318.9KB",
         fileType: "pdf",
         keywords: [
-            "phrof",'prof','professor', "malomo", "students", "copy", "chm", "102", "tutorial", "questions", "populated", "chemistry", "101", "chm102", "chm 102"
-        ],
+            "phrof",'prof','professor', "malomo", "students", "copy", "chm", "102", "tutorial", "questions", "populated", "chemistry", "101", "chm102", "chm 102",'que'],
         courseCode: "CHM 102",
         semester: "2nd semester",
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./Phrof_Malomo's_Students_Copy_CHM_102_Tutorial_Questions_Populated.pdf"
+        downLink: "https://www.dropbox.com/scl/fi/rabscdfw08psppdx1880z/Phrof_Malomo-s_Students_Copy_CHM_102_Tutorial_Questions_Populated.pdf?rlkey=3eq9ert4rkc76pm2avcmn16fg&st=x8b13849&dl=1"
     },
 ];
