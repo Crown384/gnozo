@@ -16,8 +16,8 @@ const engineeringBooks = [
         keywords: ["chm", "101", "chm101", "chm 101", "1st", "2nd", "order", "reaction","first", "second", "chemical", "kinetics", "rate", "process", "chemistry"],
         courseCode: "CHM 101",
         semester: "1st semester",
-        downLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-and-2nd-order-reaction..pdf?rlkey=ids8l8ao42c6i8ilgqztahygo&st=j6qgyw2l&dl=1",
-previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-and-2nd-order-reaction..pdf?rlkey=ids8l8ao42c6i8ilgqztahygo&st=j6qgyw2l&dl=0"
+        downLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-and-2nd-order-reaction..pdf?rlkey=ids8l8ao42c6i8ilgqztahygo&st=kzhbmuio&dl=1",
+previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-and-2nd-order-reaction..pdf?rlkey=ids8l8ao42c6i8ilgqztahygo&st=kzhbmuio&dl=0"
     },
     {
         title: "CHM 101 Aromatic Nomenclature Practice Problems",
