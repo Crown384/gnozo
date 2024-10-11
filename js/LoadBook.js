@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </svg>
               </h4>
                 <iframe style="margin: 0 auto;"
-                  src="${specificResource.downLink}"
+                  src="${specificResource.previewLink}"
                   type="application/pdf"
                   frameborder="0" width="100%" height="70vh" ></iframe>
               </span>
