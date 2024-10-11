@@ -10,7 +10,7 @@
 
 const engineeringBooks = [
     {
-        title: "CHM 101 1st and 2nd order reaction test",
+        title: "CHM 101 1st and 2nd order reaction",
         fileSize: "20.4KB",
         fileType: "pdf",
         keywords: ["chm", "101", "chm101", "chm 101", "1st", "2nd", "order", "reaction","first", "second", "chemical", "kinetics", "rate", "process", "chemistry"],
