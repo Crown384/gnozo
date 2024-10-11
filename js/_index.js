@@ -29,7 +29,7 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         ],
         courseCode: "CHM 101",
         semester: "1st semester",
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./CHM%20101%20Aromatic%20Nomenclature%20Practice%20Problems..docx"
+        downLink: "https://www.dropbox.com/scl/fi/a7lv0msb6z0opugd7n5ti/CHM-101-Aromatic-Nomenclature-Practice-Problems..doc?rlkey=hjsz1i6azgmzuo1zgmde5ndnq&st=2jj41420&dl=1"
     },
     {
         title: "CHM 101 Chemical Equilibrium",
@@ -41,7 +41,7 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         ],
         courseCode: "CHM 101",
         semester: "1st semester",
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./CHM%20101%20Chemical%20Equilibrium..pdf"
+        downLink: "https://www.dropbox.com/scl/fi/6trzemyh1p5lqv6opb8ho/CHM-101-Chemical-Equilibrium..pdf?rlkey=mlrn07m3aaffzeprn81ahyx70&st=cbk035n8&dl=1"
     },
     {
         title: "GST 101 Communication Listening Skills Reading Skills",
@@ -53,7 +53,7 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         ],
         courseCode: "GST 101",
         semester: "1st semester",
-        downLink: "https://archive.org/download/phy-101-mechanics-and-properties-of-matter-kinematics./GST%20101%20Communication%20Listening%20Skills%20Reading%20Skills.%20%281%29.pdf"
+        downLink: "https://www.dropbox.com/scl/fi/jrcxflgzy1pp4wi1wag18/GST-101-Communication-Listening-Skills-Reading-Skills..pdf?rlkey=4hdq2qkv0dqws2rbbljghxelx&st=tbp1cg46&dl=1"
     },
     {
         title: "GST 103 All Together ICT",
