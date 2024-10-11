@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <iframe style="margin: 0 auto;"
                   src="${specificResource.downLink}"
                   type="application/pdf"
-                  frameborder="0" width="100%" height="70vh" ></iframe>
+                  frameborder="0" width="100%" height="500px" ></iframe>
               </span>
             </div>
             `;
