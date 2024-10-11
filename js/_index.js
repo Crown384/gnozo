@@ -13,11 +13,11 @@ const engineeringBooks = [
         title: "CHM 101 1st and 2nd order reaction",
         fileSize: "20.4KB",
         fileType: "pdf",
-        keywords: ["chm", "101", "chm101", "chm 101", "1st", "2nd", "order", "reaction","first", "second", "chemical", "kinetics", "rate", "process", "chemistry"],
+        keywords: ["chm", "101", "chm101", "chm 101", "1st", "2nd", "order", "reaction", "first", "second", "chemical", "kinetics", "rate", "process", "chemistry"],
         courseCode: "CHM 101",
         semester: "1st semester",
         downLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-and-2nd-order-reaction..pdf?rlkey=ids8l8ao42c6i8ilgqztahygo&st=kzhbmuio&dl=1",
-previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-and-2nd-order-reaction..pdf?rlkey=ids8l8ao42c6i8ilgqztahygo&st=kzhbmuio&dl=0"
+        previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-and-2nd-order-reaction..pdf?rlkey=ids8l8ao42c6i8ilgqztahygo&st=kzhbmuio&dl=0"
     },
     {
         title: "CHM 101 Aromatic Nomenclature Practice Problems",
@@ -71,12 +71,12 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         title: "CHM 101 Reaction Order, Rate Constant, and Experimental Determination",
         fileSize: "200.4KB",
         fileType: "pdf",
-        keywords: ["chm", "101", "chm101", "chm 101", "reaction", "order", "rate","constant", "experimental", "determination", "chemistry", "kinetics", "measurement"],
+        keywords: ["chm", "101", "chm101", "chm 101", "reaction", "order", "rate", "constant", "experimental", "determination", "chemistry", "kinetics", "measurement"],
         courseCode: "CHM 101",
         semester: "1st semester",
         downLink: "https://www.dropbox.com/scl/fi/n0mwwdku6t0gs85g3dnkx/CHM_101_Reaction_Order-_Rate_Constant-_and_Experimental_Determination.pdf?rlkey=jhv8thon96cyg1gol4upweluz&st=h5zntujv&dl=1"
     },
-{
+    {
         title: "GST 101 Communication Listening Skills Reading Skills",
         fileSize: "325.3KB",
         fileType: "pdf",
@@ -374,7 +374,7 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         title: "GST 102 MCQ by B.sc",
         fileSize: "133.6KB",
         fileType: "pdf",
-        keywords: ['gst', '102', 'gst 102', 'mcq','que'],
+        keywords: ['gst', '102', 'gst 102', 'mcq', 'que'],
         courseCode: 'GST 102',
         semester: '2nd semester',
         downLink: "https://www.dropbox.com/scl/fi/wurs9pav4no9g8cegbnys/GST-102-MCQ-by-B.sc.pdf?rlkey=b1u7ipv09eouqgxta5pl68kkj&st=7zeonwhv&dl=1"
@@ -464,7 +464,7 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         title: "Mth 102 Ass Solution by B.sc",
         fileSize: "1.6MB",
         fileType: "pdf",
-        keywords: ['mth', '102', 'mth 102', 'ass', 'solution','que'],
+        keywords: ['mth', '102', 'mth 102', 'ass', 'solution', 'que'],
         courseCode: 'Mth 102',
         semester: '2nd semester',
         downLink: "https://www.dropbox.com/scl/fi/w2yz0gcf7xnodvzgme71v/Mth-102-Ass-Solution-by-B.sc.pdf?rlkey=cjpvombkp79eb4jxaj4i6m946&st=28b34uwc&dl=1"
@@ -575,7 +575,7 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         fileSize: "52.6KB",
         fileType: "pdf",
         keywords: [
-            "phy", "102", "tutorial", "que", "2017", "2018", "physics", "questions", "practice", "exam", "physics102", "phy102", "phy 102",'que'],
+            "phy", "102", "tutorial", "que", "2017", "2018", "physics", "questions", "practice", "exam", "physics102", "phy102", "phy 102", 'que'],
         courseCode: "PHY 102",
         semester: "2nd semester",
         downLink: "https://www.dropbox.com/scl/fi/a98118iove4z3zirio7gx/PHY-102-Tutorial-QUE-2017-18..pdf?rlkey=tbqt98k3gwotoyveuih3qah7l&st=kaezl6mv&dl=1"
@@ -596,7 +596,7 @@ previewLink: "https://www.dropbox.com/scl/fi/hckjabom658oa9v3d31z3/CHM-101-1st-a
         fileSize: "318.9KB",
         fileType: "pdf",
         keywords: [
-            "phrof",'prof','professor', "malomo", "students", "copy", "chm", "102", "tutorial", "questions", "populated", "chemistry", "101", "chm102", "chm 102",'que'],
+            "phrof", 'prof', 'professor', "malomo", "students", "copy", "chm", "102", "tutorial", "questions", "populated", "chemistry", "101", "chm102", "chm 102", 'que'],
         courseCode: "CHM 102",
         semester: "2nd semester",
         downLink: "https://www.dropbox.com/scl/fi/rabscdfw08psppdx1880z/Phrof_Malomo-s_Students_Copy_CHM_102_Tutorial_Questions_Populated.pdf?rlkey=3eq9ert4rkc76pm2avcmn16fg&st=x8b13849&dl=1"
